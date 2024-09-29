@@ -1,4 +1,4 @@
-# C++ Crash Course for Competitive Programming Beginners
+# C++ Crash Course for Competitive Programming Beginners (NOT DONE)
 ---
 
 Welcome to your journey into the world of competitive programming with C++! This course is designed to equip you with the following:
@@ -19,41 +19,24 @@ Welcome to your journey into the world of competitive programming with C++! This
 - [Getting Started](#getting-started)
   - [Hello World](#hello-world)
   - [Basic Input/Output](#basic-inputoutput)
-- [Variables and Data Types](#variables-and-data-types)
-- [Operators](#operators)
-- [Control Structures](#control-structures)
-  - [Conditional Statements](#conditional-statements)
-  - [Loops](#loops)
-- [Functions](#functions)
-- [Arrays and Strings](#arrays-and-strings)
-- [Pointers and References](#pointers-and-references)
-- [Standard Template Library (STL)](#standard-template-library-stl)
-  - [Vectors](#vectors)
-  - [Pairs and Tuples](#pairs-and-tuples)
-  - [Maps and Sets](#maps-and-sets)
-  - [Algorithms](#algorithms)
-- [Advanced Topics](#advanced-topics)
-  - [Recursion](#recursion)
-  - [Bit Manipulation](#bit-manipulation)
-  - [Macros and Preprocessors](#macros-and-preprocessors)
-- [Input/Output Optimization](#inputoutput-optimization)
-- [Practice Problems](#practice-problems)
-- [Additional Resources](#additional-resources)
 
 ---
 
-## Programming Set-up
+## Programming Environment Set-up
 
+Insert
 - Guide for Windows
 - Guide for Mac
 - Guide for Linux
 - Text editors and IDEs
 - Compiler
-- Odin Project
+- Use external resources
 
 ---
 
 ## Brief Introduction to Competitive Programming
+
+aaa
 
 ---
 
@@ -83,10 +66,8 @@ int main() {                                   // The main function where execut
 - `return 0`: Signals the end of the program.
 
 #### Assignment
-```markdown
-1. Try programming in C++ by copying the "Hello, World!" C++ program (Don't Copy paste it! Type it, so that you start building muscle memory.) and change "Hello, World!" to "Welcome to C++!"
-2. Modify what you did in #1 by adding another print statement that prints your name instead of "Hello, World!"
-```
+1. Try programming in C++ by copying the "Hello, World!" C++ program (Don't Copy paste it! Type it, so that you start building muscle memory.) and change "Hello, World!" to "Welcome to C++!" Then run it!
+2. Modify what you did in #1 by adding another print statement that prints your name instead of "Hello, World!" After that, try and run your program!
 
 #### Input/Output
 
@@ -106,24 +87,71 @@ int main() {
 }
 ```
 
-**Mini-Assignments**: 
-1. Create a program that takes a user's name and age, and then prints a message with this information.
-2. Write a program that asks the user for two numbers and prints their sum, difference, product, and quotient.
+When you run the code above, you are expected to see something like this in the console:
+```
+Enter your age: 
+```
 
-**Additional Practice**: 
-- [Learn about Input/Output in C++](https://www.learncpp.com/cpp-tutorial/input-and-output/)
-- [Basic I/O Practice Problems on HackerRank](https://www.hackerrank.com/challenges/cpp-input-and-output/problem)
+What's happening here is that the program is waiting for you to type something. Try and copy the code above (again try not to copy paste the code) and then run it, then see what happens when you type a number in the console and press enter. 
 
-#### Variables
+#### Variables & Arithmethic Operators
 
-Variables store data, and arrays store multiple values of the same type.
+Variables are things that store specific types of data (depending on what the variable is instructed to accept). Below is a basic example of variables in C++
 
 **Basic Variables Example**:
 ```cpp
-int x = 5;        // Integer
-double y = 4.2;   // Floating-point number
-char grade = 'A'; // Character
+int x = 5;        // Integer variable that is initiliazed with the number 5
+
+double y;         // y is declared as an empty double variable
+y = 4.2;          // y is assigned the floating number 4.2
+
+char grade = 'A'; // Character variable that is initialized with the character "A"
+
 ```
+
+Variables are usually written like this. Its either `<data-type> <variable-name>;` like `double y;` or `<data-type> <variable-name> = <value>;` like `int x = 5;` and `char grade = 'A'`. You can either declare an empty one like `double y;` at first and give it a value later, or you can also choose to declare a variable and initiliaze it with a value. 
+
+There are multiple more data types in C++, here is a list of data types that you should find very useful and their descriptions:
+- `int`  
+  *Comment:* Stores integers (whole numbers) like `42` or `-3`.
+- `float`  
+  *Comment:* Stores single-precision floating-point numbers (e.g., `3.14`).
+- `double` 
+  *Comment:* Stores double-precision floating-point numbers, more accurate decimal number represtantion than `float`.
+- `char`  
+  *Comment:* Stores a single character (e.g., `'A'`, `'3'`).
+- `bool`  
+  *Comment:* Stores boolean values, either `true` or `false`.
+- `string`
+  *Comment:* Stores strings of characters like "ABCDE" for example. Can only be used if you use the `bits/stdc++.h` library or `string` or `iostream`
+
+Now let's talk about some useful basic operators that you will be regularly using. The example below shows all of the C++ arithmethic operators. 
+
+```cpp
+#include <iostream>         // Imports the library for Input/Output functions
+
+int main() {                // Start of C++ code: The main function
+    int num1 = 10;          // Declares num1 an integer and initiliazes it with 10                                     
+    int num2 = 5;           // Declares num2 an int and inits it with 5
+    int output;             // Declares output an int with no initial value
+
+    output = num1 + 3       // output = 10 + 3 = 13 (Addition)
+    output = num1 - num2    // output = 10 - 5 = 5  (Substraction)
+    output = num2 * 5       // output = 5 * 5 = 25  (Multiplication)
+    output = num1 / 2       // output = 10 / 2 = 5  (Division)
+    output = 11 % 5         // output = 11 % 5 = 1  (Returns the remainder of a division between two values)
+
+    // Note: % is known as the modulo operator
+
+    return 0;                   // Signals the end of the program
+}
+```
+
+**Assignment**: 
+1. Try and apply what you've learned so far and create a program that accepts two integer numbers A and B and prints the result of A + B, A - B, A * B, and A / B with its remainder. 
+
+#### Arrays
+
 
 **Array Example**:
 ```cpp
@@ -131,7 +159,11 @@ int numbers[5] = {1, 2, 3, 4, 5};
 std::cout << numbers[0]; // Access first element
 ```
 
-**Mini-Assignments**: 
+**Assignment**: 
+1. Create a program that takes a user's name and age, and then prints a message with this information.
+2. Write a program that asks the user for two numbers and prints their sum, difference, product, and quotient.
+
+**Assignment**: 
 1. Write a program that declares variables of different types (e.g., `int`, `float`, `char`) and prints them.
 2. Write a program that stores 5 different ages in an array and prints the average.
 3. Create an array of 10 integers and print only the even numbers.
@@ -143,14 +175,27 @@ std::cout << numbers[0]; // Access first element
 
 #### Knowledge check
 These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, click the question to revisit the material. Remember, you're not expected to memorize or fully master this information.
-
-- [How do you output things to the terminal and accept input in C++?](https://www.learncpp.com/cpp-tutorial/input-and-output/)
+- Note: put resources below in "Additional resources"
+- [How do you output things to the terminal and accept input in C++?](https://www.geeksforgeeks.org/basic-input-output-c/)
+- [How do you create different types of variables in C++?](https://www.geeksforgeeks.org/cpp-variables/)
 
 #### Additional Resources
 This part offers useful links to relevant content. It's optional and meant to be extra material for further reading.
 - a
 
+
+**Additional Practice**: 
+- [Basic I/O Practice Problems on HackerRank](https://www.hackerrank.com/challenges/cpp-input-and-output/problem)
 ---
+
+
+
+
+
+
+
+
+
 
 ### Arrays
 
