@@ -31,7 +31,7 @@ jobs:
         run: |
           if find extracted_code -name '*.cpp' | grep -q .; then
             echo "C++ code found, running Cppcheck..."
-            cppcheck --enable=all --inconclusive --error-exitcode=1 --suppress=missingIncludeSystem extracted_code
+            cppcheck --enable=all --inconclusive --error-exitcode=1 extracted_code
           else
             echo "No C++ code found. All is good."
           fi
