@@ -46,11 +46,17 @@ aaa
 
 #### Parts of Basic C++ Code
 
+C++ is a powerful programming language used for a variety of applications, from system software to game development. In this guide, you'll learn the basics and get hands-on with coding right away.
+
+---
+
+#### Parts of Basic C++ Code
+
 At its core, every C++ program contains a structure similar to this:
 
 ```cpp
 #include <bits/stdc++.h>                       // Preprocessor directive/Library
-using namespace std;                           // Makes the program use the "Standard Namespace"
+using namespace std;                           // Use the Standard Namespace
 
 int main() {                                   // The main function where execution starts
     cout << "Hello, World!" << endl;           // Print statement
@@ -59,15 +65,15 @@ int main() {                                   // The main function where execut
 ```
 
 **Breakdown**:
-- `#include <bits/stdc++.h>`: This imports the library for every function you would need. Functions like the math functions, input/output functions, algorithms, string handling, etc.
-- `using napespace std;`: This makes it so that you don't need to type `cout` and `endl` as `std::cout << "Hello, World!" << std::end;`, its useful for simple/small programs, but not so much in larger programs as it might result in conflicts with other namespaces. 
-- `int main()`: Every C++ program must have a `main` function, which is where the program starts executing.
-- `cout`: Outputs data to the console. In this case, it's "Hello, World!" 
-- `return 0`: Signals the end of the program.
+- `#include <bits/stdc++.h>`: This directive imports all standard libraries, covering a wide range of functions like math operations, input/output, algorithms, and string handling.
+- `using namespace std;`: This allows you to write `cout` and `endl` without the `std::` prefix, which simplifies small programs but may cause conflicts in larger ones.
+- `int main()`: Every C++ program must have a `main` function, which is the entry point where the program starts executing.
+- `cout`: This is used to output text to the console. In this case, it prints "Hello, World!".
+- `return 0;`: This signals the program has executed successfully and terminates it.
 
 #### Assignment
-1. Try programming in C++ by copying the "Hello, World!" C++ program (Don't Copy paste it! Type it, so that you start building muscle memory.) and change "Hello, World!" to "Welcome to C++!" Then run it!
-2. Modify what you did in #1 by adding another print statement that prints your name instead of "Hello, World!" After that, try and run your program!
+1. Write the "Hello, World!" program yourself (type it manually for practice) and change the message to "Welcome to C++!". Then, compile and run it.
+2. Modify your code by adding another `cout` statement to print your name. Try running the program again.
 
 #### Input/Output
 
@@ -75,57 +81,63 @@ int main() {                                   // The main function where execut
 - `std::cout` is used for output.
 - `std::cin` is used for input.
 
+
 ```cpp
-#include <iostream>                                                 // Imports the library for Input/Output functions
+#include <iostream>            // Import the library for Input/Output
 
 int main() {
-    int age;                                                        // Creates an integer variable called "age"
-    std::cout << "Enter your age: ";                                // Prints "Enter your age:" and does not move on to the next line in the console
-    std::cin >> age;                                                // Input stored in variable 'age'
-    std::cout << "You are " << age << " years old." << std::endl;   // Prints "You are <inputted age> years old."
-    return 0;                                                       // Signals the end of the program
+    int age;                                                      
+    std::cout << "Enter your age: ";             // Prompt the user for input
+    std::cin >> age;                             // Store the input in the "age" variable
+
+    std::cout << "You are " << age << " years old." << std::endl; // Output the result
+    return 0;
 }
 ```
 
-When you run the code above, you are expected to see something like this in the console:
+Here’s a revised version of your paragraph:
+
+When you run the code above, you'll see:
+
 ```
-Enter your age: 
+Enter your age:
 ```
 
-What's happening here is that the program is waiting for you to type something. Try and copy the code above (again try not to copy paste the code) and then run it, then see what happens when you type a number in the console and press enter. 
+Try typing the code yourself (no copy-pasting!), run it, and when prompted, input your age and press "Enter." The program will then display your age in the following format: `You are <inputted age> years old.`
+
+---
 
 #### Variables & Arithmethic Operators
 
 Variables are things that store specific types of data (depending on what the variable is instructed to accept). Below is a basic example of variables in C++
 
 **Basic Variables Example**:
+Variables are placeholders that store different types of data. Here's an example:
+
 ```cpp
-int x = 5;        // Integer variable that is initiliazed with the number 5
+int x = 5;               // Integer variable initialized to 5
 
-double y;         // y is declared as an empty double variable
-y = 4.2;          // y is assigned the floating number 4.2
+double y;                // Declare an empty double variable
+y = 4.2;                 // Assign the value 4.2 to y
 
-char grade = 'A'; // Character variable that is initialized with the character "A"
-
+char grade = 'A';        // Character variable initialized with 'A'
 ```
 
-Variables are usually written like this. Its either `<data-type> <variable-name>;` like `double y;` or `<data-type> <variable-name> = <value>;` like `int x = 5;` and `char grade = 'A'`. You can either declare an empty one like `double y;` at first and give it a value later, or you can also choose to declare a variable and initiliaze it with a value. 
+Variables follow the format: `<data-type> <variable-name>;` or `<data-type> <variable-name> = <value>;`. You can declare a variable first and assign a value later, or initialize it immediately.
 
-There are multiple more data types in C++, here is a list of data types that you should find very useful and their descriptions:
-- `int`  
-  *Comment:* Stores integers (whole numbers) like `42` or `-3`.
-- `float`  
-  *Comment:* Stores single-precision floating-point numbers (e.g., `3.14`).
-- `double` 
-  *Comment:* Stores double-precision floating-point numbers, more accurate decimal number represtantion than `float`.
-- `char`  
-  *Comment:* Stores a single character (e.g., `'A'`, `'3'`).
-- `bool`  
-  *Comment:* Stores boolean values, either `true` or `false`.
-- `string`
-  *Comment:* Stores strings of characters like "ABCDE" for example. Can only be used if you use the `bits/stdc++.h` library or `string` or `iostream`
+**Common Data Types**:
+- `int`: Stores integers (e.g., `42`, `-3`).
+- `float`: Stores single-precision floating-point numbers (e.g., `3.14`).
+- `double`: Stores double-precision floating-point numbers with more accuracy than `float`.
+- `char`: Stores a single character (e.g., `'A'`, `'3'`).
+- `bool`: Stores boolean values (`true` or `false`).
+- `string`: Stores sequences of characters (e.g., `"Hello!"`). Use with `#include <string>`.
 
-Now let's talk about some useful basic operators that you will be regularly using. The example below shows all of the C++ arithmethic operators. 
+---
+
+**Basic Arithmetic Operators**:
+
+The code below shows all of the arithmethic operators that you can use when coding in C++!
 
 ```cpp
 #include <iostream>         // Imports the library for Input/Output functions
@@ -147,8 +159,39 @@ int main() {                // Start of C++ code: The main function
 }
 ```
 
+---
+
+#### Assignment
+
+1. Create a program that accepts two integers, A and B, then prints the results of A + B, A - B, A * B, A / B, and the remainder (A % B).
+2. Write a program that declares variables of different types and prints them.
+
+---
+
+#### Knowledge check
+These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, click the question to revisit the material. Remember, you're not expected to memorize or fully master this information.
+- Note: put resources below in "Additional resources"
+- [How do you output things to the terminal and accept input in C++?](https://www.geeksforgeeks.org/basic-input-output-c/)
+- [How do you create different types of variables in C++?](https://www.geeksforgeeks.org/cpp-variables/)
+
+---
+
+#### Additional Resources
+This part offers useful links to relevant content. It's optional and meant to be extra material for further reading.
+- [Basic I/O Practice Problems on HackerRank](https://www.hackerrank.com/challenges/cpp-input-and-output/problem)
+
+---
+
+**Additional Practice**: 
+- [C++ Variable Declarations](https://www.learncpp.com/cpp-tutorial/variables-and-assignments/)
+- [Arrays in C++](https://www.geeksforgeeks.org/arrays-in-cpp/)
+- [Arrays and Data Structures Practice Problems](https://www.hackerrank.com/domains/tutorials/10-days-of-cplusplus)
+
 **Assignment**: 
-1. Try and apply what you've learned so far and create a program that accepts two integer numbers A and B and prints the result of A + B, A - B, A * B, and A / B with its remainder. 
+
+2. Write a program that stores 5 different ages in an array and prints the average.
+3. Create an array of 10 integers and print only the even numbers.
+
 
 #### Arrays
 
@@ -158,41 +201,6 @@ int main() {                // Start of C++ code: The main function
 int numbers[5] = {1, 2, 3, 4, 5};
 std::cout << numbers[0]; // Access first element
 ```
-
-**Assignment**: 
-1. Create a program that takes a user's name and age, and then prints a message with this information.
-2. Write a program that asks the user for two numbers and prints their sum, difference, product, and quotient.
-
-**Assignment**: 
-1. Write a program that declares variables of different types (e.g., `int`, `float`, `char`) and prints them.
-2. Write a program that stores 5 different ages in an array and prints the average.
-3. Create an array of 10 integers and print only the even numbers.
-
-**Additional Practice**: 
-- [C++ Variable Declarations](https://www.learncpp.com/cpp-tutorial/variables-and-assignments/)
-- [Arrays in C++](https://www.geeksforgeeks.org/arrays-in-cpp/)
-- [Arrays and Data Structures Practice Problems](https://www.hackerrank.com/domains/tutorials/10-days-of-cplusplus)
-
-#### Knowledge check
-These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, click the question to revisit the material. Remember, you're not expected to memorize or fully master this information.
-- Note: put resources below in "Additional resources"
-- [How do you output things to the terminal and accept input in C++?](https://www.geeksforgeeks.org/basic-input-output-c/)
-- [How do you create different types of variables in C++?](https://www.geeksforgeeks.org/cpp-variables/)
-
-#### Additional Resources
-This part offers useful links to relevant content. It's optional and meant to be extra material for further reading.
-- a
-
-
-**Additional Practice**: 
-- [Basic I/O Practice Problems on HackerRank](https://www.hackerrank.com/challenges/cpp-input-and-output/problem)
----
-
-
-
-
-
-
 
 
 
