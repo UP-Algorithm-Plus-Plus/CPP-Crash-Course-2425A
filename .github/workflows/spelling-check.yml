@@ -1,0 +1,27 @@
+name: Spelling Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+
+jobs:
+  spell-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Codespell
+        run: sudo apt-get install -y codespell
+
+      - name: Run Codespell
+        run: |
+          codespell .
+          if [ $? -ne 0 ]; then
+            echo "Spelling errors found. Please fix them."
+            exit 1
+          fi
