@@ -1,0 +1,37 @@
+name: Cppcheck for C++ Code in Markdown
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Cppcheck
+        run: sudo apt-get install cppcheck
+
+      - name: Extract C++ code from Markdown
+        run: |
+          # Create a temp directory for extracted C++ code
+          mkdir -p extracted_code
+          # Extract code blocks from markdown files and save as .cpp files
+          for file in *.md; do
+            awk '/```cpp/,/```/' $file | sed '/```/d' > extracted_code/${file%.md}.cpp
+          done
+
+      - name: Run Cppcheck on extracted code
+        run: |
+          if find extracted_code -name '*.cpp' | grep -q .; then
+            echo "C++ code found, running Cppcheck..."
+            cppcheck --enable=all --inconclusive --error-exitcode=1 --suppress=missingIncludeSystem extracted_code
+          else
+            echo "No C++ code found. All is good."
+          fi
