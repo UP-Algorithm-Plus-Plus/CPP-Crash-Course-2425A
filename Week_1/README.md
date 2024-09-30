@@ -1,4 +1,4 @@
-# C++ Crash Course for Competitive Programming Beginners (NOT DONE)
+# C++ Crash Course Week 1 (NOT DONE)
 ---
 
 Welcome to your journey into the world of competitive programming with C++! This course is designed to equip you with the following:
@@ -44,8 +44,6 @@ aaa
 
 ### Intro to C++
 
-#### Parts of Basic C++ Code
-
 C++ is a powerful programming language used for a variety of applications, from system software to game development. In this guide, you'll learn the basics and get hands-on with coding right away.
 
 ---
@@ -71,9 +69,14 @@ int main() {                                   // The main function where execut
 - `cout`: This is used to output text to the console. In this case, it prints "Hello, World!".
 - `return 0;`: This signals the program has executed successfully and terminates it.
 
+---
+
 #### Assignment
 1. Write the "Hello, World!" program yourself (type it manually for practice) and change the message to "Welcome to C++!". Then, compile and run it.
 2. Modify your code by adding another `cout` statement to print your name. Try running the program again.
+
+---
+
 
 #### Input/Output
 
@@ -107,7 +110,7 @@ Try typing the code yourself (no copy-pasting!), run it, and when prompted, inpu
 
 ---
 
-#### Variables & Arithmethic Operators
+#### Variables
 
 Variables are things that store specific types of data (depending on what the variable is instructed to accept). Below is a basic example of variables in C++
 
@@ -135,7 +138,7 @@ Variables follow the format: `<data-type> <variable-name>;` or `<data-type> <var
 
 ---
 
-**Basic Arithmetic Operators**:
+#### Arithmetic Operators
 
 The code below shows all of the arithmethic operators that you can use when coding in C++!
 
@@ -154,6 +157,7 @@ int main() {                // Start of C++ code: The main function
     output = 11 % 5         // output = 11 % 5 = 1  (Returns the remainder of a division between two values)
 
     // Note: % is known as the modulo operator
+    // Additional Note: These operators are also used in other programming languages
 
     return 0;                   // Signals the end of the program
 }
@@ -182,37 +186,58 @@ This part offers useful links to relevant content. It's optional and meant to be
 
 ---
 
-**Additional Practice**: 
-- [C++ Variable Declarations](https://www.learncpp.com/cpp-tutorial/variables-and-assignments/)
-- [Arrays in C++](https://www.geeksforgeeks.org/arrays-in-cpp/)
-- [Arrays and Data Structures Practice Problems](https://www.hackerrank.com/domains/tutorials/10-days-of-cplusplus)
-
-**Assignment**: 
-
-2. Write a program that stores 5 different ages in an array and prints the average.
-3. Create an array of 10 integers and print only the even numbers.
-
-
 #### Arrays
 
+Arrays are things that contain a serious of different values (depending on what it is declared to contain). For other programming languages, arrays may accept more than 1 type of data type. For now, we will only be talking about one-dimensional arrays.
+
+Below is an example of an array (that can be placed inside of the `int main` function)
 
 **Array Example**:
 ```cpp
-int numbers[5] = {1, 2, 3, 4, 5};
-std::cout << numbers[0]; // Access first element
+int numbers[5] = {1, 2, 3, 4, 5};     
+/*
+  numbers is declared to be a static 1-dimensional array that will contain 5 integer values divided by ","
+
+  static here means that its something that will always hold a specific number of elements at all times,
+  and the size of the array cannot be change. 
+*/
+
+// Note: We start counting at 0
+std::cout << numbers[0] << std::end;              // Access and print first element
+std::cout << numbers[1] << std::end;              // Access and print second element
+std::cout << numbers[2] << std::end;              // Access and print third element
+std::cout << numbers[3] << std::end;              // Access and print fourth element
+std::cout << numbers[4] << std::end;              // Access and print fifth element
 ```
 
+---
 
+#### Assignment
+1. Write a program that declares arrays for the following data types: double, int, char, and string (Note that if you do not use `using namespace std;`, ensure that string is declared as `std::string arrayName[number of elements] = {elements};`). Each array must have 3 elements each.
+2. Using the same program you made, print the first element of the double array, the second element of the int array, the third element of the char array, and all of the elements of the string array.
 
+---
 
-### Arrays
+#### Knowledge check
+These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, click the question to revisit the material. Remember, you're not expected to memorize or fully master this information.
+- Note: put resources below in "Additional resources"
+- 
 
-### Conditionals
+---
 
-Conditionals control the flow of a program based on certain conditions.
+#### Additional Resources
+This part offers useful links to relevant content. It's optional and meant to be extra material for further reading.
+- [Basi
+
+---
+
+#### Conditional Statements
+
+Conditional statements control the flow of a program based on certain conditions.
 
 ```cpp
 int age = 20;
+
 if (age >= 18) {
     std::cout << "You are an adult.";
 } else {
@@ -220,18 +245,33 @@ if (age >= 18) {
 }
 ```
 
-**Mini-Assignments**: 
-1. Write a program that checks if a number is even or odd.
-2. Create a program that takes in a student's score and prints their letter grade (A, B, C, D, F).
-3. Write a program that asks for the user's age and tells them if they are eligible to vote (18 or older).
+---
 
-**Additional Practice**: 
-- [Conditional Statements in C++](https://www.learncpp.com/cpp-tutorial/if-statements/)
-- [Conditional Statements Practice Problems](https://www.hackerrank.com/challenges/conditional-statements-in-c/problem)
+#### Assignment
+1. Create a basic Calculator using C++! Make it so that the Calculator can take in two integer inputs A and B from the user and ask the user what operation does the user want to perform (A + B, A - B, A * B, or A / B). Have the calculator print the result of its calculations. Ensure that when the user picks division, the remainder from the division operation is also printed. 
+2. Try solving the [Quadrant Selection](https://open.kattis.com/problems/quadrant) programming problem!
 
 ---
 
-### Loops
+#### Knowledge check
+These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, click the question to revisit the material. Remember, you're not expected to memorize or fully master this information.
+- N
+
+---
+
+#### Additional Resources
+This part offers useful links to relevant content. It's optional and meant to be extra material for further reading.
+- 
+
+---
+
+
+
+
+
+
+
+#### Loops
 
 Loops are used to execute a block of code repeatedly.
 
@@ -251,18 +291,9 @@ while (i < 5) {
 }
 ```
 
-**Mini-Assignments**: 
-1. Write a program that prints numbers from 1 to 10 using a `for` loop.
-2. Create a program that prints the first 10 numbers in the Fibonacci sequence.
-3. Write a program that takes a positive integer `n` as input and prints all numbers from `n` down to 1 using a `while` loop.
-
-**Additional Practice**: 
-- [C++ Loops](https://www.learncpp.com/cpp-tutorial/loops/)
-- [Looping Practice Problems](https://www.hackerrank.com/challenges/for-loop-in-c/problem)
-
 ---
 
-### Functions
+#### Functions
 
 Functions group code into reusable blocks. Here’s how to define and use them:
 
@@ -277,6 +308,48 @@ int main() {
     return 0;
 }
 ```
+
+---
+
+
+
+
+
+
+
+
+
+**Additional Practice**: 
+- [C++ Variable Declarations](https://www.learncpp.com/cpp-tutorial/variables-and-assignments/)
+- [Arrays in C++](https://www.geeksforgeeks.org/arrays-in-cpp/)
+- [Arrays and Data Structures Practice Problems](https://www.hackerrank.com/domains/tutorials/10-days-of-cplusplus)
+
+
+
+
+**Mini-Assignments**: 
+1. Write a program that checks if a number is even or odd.
+2. Create a program that takes in a student's score and prints their letter grade (A, B, C, D, F).
+3. Write a program that asks for the user's age and tells them if they are eligible to vote (18 or older).
+
+**Additional Practice**: 
+- [Conditional Statements in C++](https://www.learncpp.com/cpp-tutorial/if-statements/)
+- [Conditional Statements Practice Problems](https://www.hackerrank.com/challenges/conditional-statements-in-c/problem)
+
+---
+
+
+**Mini-Assignments**: 
+1. Write a program that prints numbers from 1 to 10 using a `for` loop.
+2. Create a program that prints the first 10 numbers in the Fibonacci sequence.
+3. Write a program that takes a positive integer `n` as input and prints all numbers from `n` down to 1 using a `while` loop.
+
+**Additional Practice**: 
+- [C++ Loops](https://www.learncpp.com/cpp-tutorial/loops/)
+- [Looping Practice Problems](https://www.hackerrank.com/challenges/for-loop-in-c/problem)
+
+---
+
 
 **Mini-Assignments**: 
 1. Write a function that takes two numbers as input and returns the larger of the two.
@@ -298,19 +371,7 @@ int main() {
 
 ---
 
-You can continue building on this guide by adding more advanced topics like pointers, object-oriented programming, and error handling!
 
-```markdown
-
-## Introduction
-
-*Provide a brief overview of the course, its goals, and prerequisites.*
-
----
-
-## Getting Started
-
-### Hello World
 
 Your first C++ program!
 
@@ -575,11 +636,3 @@ std::cin.tie(0);
   - [GeeksforGeeks](https://www.geeksforgeeks.org/c-plus-plus/)
   - [CP-Algorithms](https://cp-algorithms.com/)
 
----
-
-*Happy Coding and Good Luck on Your Competitive Programming Journey!* 🎯
-```
-
----
-
-You can customize each section by adding explanations, examples, and practice problems relevant to the topic. This template uses clear headings, code blocks with syntax highlighting, and bullet points to enhance readability. Feel free to modify and expand upon this structure to suit your course's needs.
