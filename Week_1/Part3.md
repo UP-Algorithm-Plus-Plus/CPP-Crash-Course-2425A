@@ -6,7 +6,7 @@ C++ is a versatile and high-performance programming language that has been a cor
 
 ---
 
-<br><br>
+<br>
 
 ## Parts of a Basic C++ Program
 
@@ -41,7 +41,7 @@ int main() {                   // The main function where program execution begi
 
 ---
 
-<br><br>
+<br>
 
 ## Input and Output in C++
 
@@ -153,7 +153,7 @@ int main() {
 
 ---
 
-<br><br>
+<br>
 
 ## Variables and Data Types
 
@@ -242,7 +242,7 @@ Attempting to modify a constant variable will result in a compilation error.
 
 ---
 
-<br><br>
+<br>
 
 ## Arithmetic Operators
 
@@ -373,7 +373,7 @@ x *= 2;  // x is now 30
 
 ---
 
-<br><br>
+<br>
 
 ## Summary
 
@@ -381,7 +381,7 @@ In this lesson, we've introduced the fundamental concepts of C++ programming. Yo
 
 ---
 
-<br><br>
+<br>
 
 ## Knowledge check
 These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, click the question to revisit the material. Remember, you're not expected to memorize or fully master this information.
@@ -395,7 +395,7 @@ These questions provide a chance to think about the important topics covered in 
 
 ---
 
-<br><br>
+<br>
 
 ## Additional Resources
 This part offers useful links to relevant content. It's optional and meant to be extra material for further reading. (Note: Some resources here require you you to have access to the Algo++ Google drive in order to access it.)
