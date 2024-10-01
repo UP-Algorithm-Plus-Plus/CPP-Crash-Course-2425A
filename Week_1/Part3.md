@@ -6,6 +6,8 @@ C++ is a versatile and high-performance programming language that has been a cor
 
 ---
 
+<br><br>
+
 ## Parts of a Basic C++ Program
 
 At its core, every C++ program contains certain essential components. Let's look at a simple program and break down each part to understand how it works:
@@ -30,12 +32,16 @@ int main() {                   // The main function where program execution begi
 
 ---
 
+
+
 ### Assignment
 
 1. Write the "Hello, World!" program yourself (type it manually for practice) and change the message to "Welcome to C++!". Then, compile and run it.
 2. Modify your code by adding another `std::cout` statement to print your name. Try running the program again.
 
 ---
+
+<br><br>
 
 ## Input and Output in C++
 
@@ -69,6 +75,8 @@ int main() {
 Type the code manually (avoid copy-pasting to improve retention), compile, and run it. When prompted, enter your age and see how the program responds.
 
 ---
+
+
 
 ### Using `std::getline()`
 
@@ -131,71 +139,7 @@ int main() {
 
 ---
 
-### Using `std::cin.peek()`
 
-The `std::cin.peek()` function allows you to look at the next character in the input stream without extracting it. This can be useful when you need to make decisions based on the next character input.
-
-**Example with `std::cin.peek()`**:
-
-```cpp
-#include <iostream>
-
-int main() {
-    char nextChar;
-
-    std::cout << "Enter a character: ";
-    nextChar = std::cin.peek();    // Peek at the next character in the input buffer
-
-    std::cout << "You entered: " << nextChar << std::endl;
-
-    // Now extract the character so it doesn't affect future input
-    std::cin >> nextChar;
-
-    return 0;
-}
-```
-
-**Explanation**:
-
-- `std::cin.peek();` returns the next character in the input stream without removing it from the buffer.
-- This is useful if you want to check what the next character is before deciding how to process the input.
-
-**Practical Use Case**:
-
-Suppose you want to read input until the user enters a period (`.`). You can use `std::cin.peek()` to check if the next character is a period and stop reading when it is.
-
-**Example**:
-
-```cpp
-#include <iostream>
-
-int main() {
-    char ch;
-
-    std::cout << "Enter characters (enter '.' to stop): ";
-
-    while (true) {
-        ch = std::cin.peek();    // Peek at the next character
-        if (ch == '.') {
-            break;               // Exit the loop if the next character is a period
-        }
-        std::cin >> ch;          // Extract the character from the buffer
-        std::cout << ch << " ";
-    }
-
-    std::cout << std::endl << "Loop terminated due to '.' character." << std::endl;
-
-    return 0;
-}
-```
-
-**Explanation**:
-
-- The program continuously peeks at the next character and checks if it's a period.
-- If it is, it breaks out of the loop.
-- Otherwise, it reads the character and processes it.
-
----
 
 ### Assignments
 
@@ -207,15 +151,15 @@ int main() {
 
    - Modify the previous program to first ask for the user's name using `std::cin >> name;`, then ask for the address using `std::getline()`. Handle the input buffer appropriately so that both inputs are correctly read and displayed.
 
-3. **Using `std::cin.peek()`**:
-
-   - Create a program that reads characters from the user until the user enters a digit (`'0'` to `'9'`). Use `std::cin.peek()` to check if the next character is a digit and terminate the input when it is. Display all the characters entered before the digit.
-
 ---
+
+<br><br>
 
 ## Variables and Data Types
 
 In programming, variables are like containers that hold data values. Each variable has a specific data type that determines the kind of data it can store and the operations you can perform on it.
+
+
 
 ### Declaring Variables
 
@@ -252,6 +196,8 @@ std::string name = "Alice"; // String variable initialized with "Alice"
 - `bool`: Represents Boolean values `true` or `false`.
 - `std::string`: Represents a sequence of characters (e.g., `"Hello, World!"`). To use `std::string`, include the `<string>` header.
 
+
+
 ### Variable Naming Rules
 
 When naming variables in C++, follow these rules:
@@ -260,6 +206,8 @@ When naming variables in C++, follow these rules:
 - Names must begin with a letter or an underscore, not a digit.
 - Names are case-sensitive (`myVar` and `myvar` are different variables).
 - Avoid using reserved keywords (like `int`, `double`, `class`, etc.) as variable names.
+
+
 
 ### Constants
 
@@ -274,6 +222,8 @@ const double PI = 3.14159; // PI is a constant and cannot be modified
 Attempting to modify a constant variable will result in a compilation error.
 
 ---
+
+
 
 ### Assignment
 
@@ -291,6 +241,8 @@ Attempting to modify a constant variable will result in a compilation error.
    - Display the calculated area to the user.
 
 ---
+
+<br><br>
 
 ## Arithmetic Operators
 
@@ -346,6 +298,8 @@ Remainder: 0
 - **Modulo Operator `%`**: Only works with integer operands. It returns the remainder after division.
   - Example: `11 % 3` results in `2` because `11` divided by `3` is `3` with a remainder of `2`.
 
+
+
 ### Operator Precedence
 
 Operator precedence determines the order in which operations are performed in an expression without parentheses. In C++, arithmetic operators have the following precedence (from highest to lowest):
@@ -369,6 +323,8 @@ int result = (10 + 5) * 2; // Parentheses change the order
 // result = (10 + 5) * 2 = 15 * 2 = 30
 ```
 
+
+
 ### Assignment Operators
 
 C++ also provides shorthand assignment operators that combine arithmetic and assignment:
@@ -388,6 +344,9 @@ x *= 2;  // x is now 30
 ```
 
 ---
+
+
+
 
 ### Assignment
 
@@ -414,19 +373,29 @@ x *= 2;  // x is now 30
 
 ---
 
+<br><br>
+
 ## Summary
 
 In this lesson, we've introduced the fundamental concepts of C++ programming. You've learned about the structure of a basic C++ program, how to perform input and output operations, declare and use variables of different data types, and utilize arithmetic operators to perform calculations. By completing the assignments, you'll gain practical experience that reinforces these concepts. As you progress, you'll build upon this foundation to tackle more complex programming challenges.
 
 ---
 
+<br><br>
+
 ## Knowledge check
 These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, click the question to revisit the material. Remember, you're not expected to memorize or fully master this information.
-- Note: put resources below in "Additional resources"
-- [How do you output things to the terminal and accept input in C++?](https://www.geeksforgeeks.org/basic-input-output-c/)
-- [How do you create different types of variables in C++?](https://www.geeksforgeeks.org/cpp-variables/)
+- [What are the different parts of a C++ program?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#parts-of-a-basic-c-program)
+- [How do you display a message on the console in C++?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#parts-of-a-basic-c-program)
+- [What are the two methods for accepting user input in C++, and how do you implement them?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#input-and-output-in-c)
+- [What are the different C++ data types you can use?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#input-and-output-in-c)
+- [How do you create variables of different data types in C++ and initialize them with values?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#input-and-output-in-c)
+- [What are the C++ arithmetic operators?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#input-and-output-in-c)
+- [What are the C++ assignment operators?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#input-and-output-in-c)
 
 ---
+
+<br><br>
 
 ## Additional Resources
 This part offers useful links to relevant content. It's optional and meant to be extra material for further reading. (Note: Some resources here require you you to have access to the Algo++ Google drive in order to access it.)
