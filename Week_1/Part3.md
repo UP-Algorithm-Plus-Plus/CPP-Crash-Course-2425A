@@ -373,7 +373,7 @@ In this lesson, we've introduced the fundamental concepts of C++ programming. Yo
 <br>
 
 ## Knowledge check
-These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, click the question to revisit the material. Remember, you're not expected to memorize or fully master this information.
+These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
 - [What are the different parts of a C++ program?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#parts-of-a-basic-c-program)
 - [How do you display a message on the console in C++?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#parts-of-a-basic-c-program)
 - [What are the two methods for accepting user input in C++, and how do you implement them?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#input-and-output-in-c)
@@ -386,7 +386,7 @@ These questions provide a chance to think about the important topics covered in 
 <br>
 
 ## Additional Resources
-This part offers useful links to relevant content. It's optional and meant to be extra material for further reading. (Note: Some resources here require you you to have access to the Algo++ Google drive in order to access it.)
+This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources here require you you to have access to the Algo++ Google drive in order to view it.)
 - [UP Algo++ C++ Basics Lecture Slides](https://docs.google.com/presentation/d/1GTqu2WP6rm03Y3yAxIiNY4M2I0Lk1kRFdhG84h0_h7g/edit?usp=drive_link)
 - [UP Algo++ C++ Input/Output Lecture Slides](https://docs.google.com/presentation/d/171anDJYv_f7trafJEeXXEmoSze4iB0SCJBSn7I16MSg/edit?usp=drive_link)
 - [Writing your first C++ Program](https://youtu.be/S3nx34WFXjI?si=bl7KWLkNVqV127f1&t=555)
