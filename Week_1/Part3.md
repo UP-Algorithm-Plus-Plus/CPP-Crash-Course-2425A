@@ -4,7 +4,6 @@
 
 C++ is a versatile and high-performance programming language that has been a cornerstone of software development for decades. From operating systems like Windows to game engines like Unreal Engine, C++ powers many of the applications we use every day. In this guide, we'll embark on a journey to explore the fundamentals of C++ programming, providing you with a solid foundation to build upon. We'll dive into writing code from the very beginning, ensuring that you get practical experience as you learn.
 
----
 
 <br>
 
@@ -30,16 +29,12 @@ int main() {                   // The main function where program execution begi
 
 **Note**: You might have seen examples that include `using namespace std;`, which allows you to omit the `std::` prefix. However, in professional code, it's generally better to avoid this practice to prevent potential naming conflicts and to make the code clearer.
 
----
-
-
+<br>
 
 ### Assignment
 
 1. Write the "Hello, World!" program yourself (type it manually for practice) and change the message to "Welcome to C++!". Then, compile and run it.
 2. Modify your code by adding another `std::cout` statement to print your name. Try running the program again.
-
----
 
 <br>
 
@@ -74,9 +69,7 @@ int main() {
 
 Type the code manually (avoid copy-pasting to improve retention), compile, and run it. When prompted, enter your age and see how the program responds.
 
----
-
-
+<br>
 
 ### Using `std::getline()`
 
@@ -137,7 +130,7 @@ int main() {
 - After reading `age` with `std::cin >> age;`, there is a leftover newline character in the input buffer.
 - `std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');` discards characters in the input buffer until a newline character is found, effectively clearing it.
 
----
+<br>
 
 
 
@@ -151,7 +144,6 @@ int main() {
 
    - Modify the previous program to first ask for the user's name using `std::cin >> name;`, then ask for the address using `std::getline()`. Handle the input buffer appropriately so that both inputs are correctly read and displayed.
 
----
 
 <br>
 
@@ -221,7 +213,7 @@ const double PI = 3.14159; // PI is a constant and cannot be modified
 
 Attempting to modify a constant variable will result in a compilation error.
 
----
+<br>
 
 
 
@@ -240,7 +232,6 @@ Attempting to modify a constant variable will result in a compilation error.
    - Calculate the area using the formula: Area = π × radius².
    - Display the calculated area to the user.
 
----
 
 <br>
 
@@ -343,7 +334,7 @@ x += 5;  // x is now 15
 x *= 2;  // x is now 30
 ```
 
----
+<br>
 
 
 
@@ -371,7 +362,6 @@ x *= 2;  // x is now 30
      - Area = π × radius²
      - Circumference = 2 × π × radius
 
----
 
 <br>
 
@@ -379,7 +369,6 @@ x *= 2;  // x is now 30
 
 In this lesson, we've introduced the fundamental concepts of C++ programming. You've learned about the structure of a basic C++ program, how to perform input and output operations, declare and use variables of different data types, and utilize arithmetic operators to perform calculations. By completing the assignments, you'll gain practical experience that reinforces these concepts. As you progress, you'll build upon this foundation to tackle more complex programming challenges.
 
----
 
 <br>
 
@@ -393,7 +382,6 @@ These questions provide a chance to think about the important topics covered in 
 - [What are the C++ arithmetic operators?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#input-and-output-in-c)
 - [What are the C++ assignment operators?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#input-and-output-in-c)
 
----
 
 <br>
 
