@@ -32,7 +32,7 @@ int main() {                   // The main function where program execution begi
 <br>
 
 ### Assignment
-
+---
 1. Write the "Hello, World!" program yourself (type it manually for practice) and change the message to "Welcome to C++!". Then, compile and run it.
 2. Modify your code by adding another `std::cout` statement to print your name. Try running the program again.
 
@@ -134,8 +134,8 @@ int main() {
 
 
 
-### Assignments
-
+### Assignment
+---
 1. **Using `std::getline()`**:
 
    - Write a program that asks the user to enter their address, which may contain spaces and multiple lines. Use `std::getline()` to read the full address and then print it back to the user.
@@ -218,7 +218,7 @@ Attempting to modify a constant variable will result in a compilation error.
 
 
 ### Assignment
-
+---
 1. **Variable Declaration and Printing**:
 
    - Declare variables of different data types (`int`, `double`, `char`, `bool`, `std::string`) and initialize them with values of your choice.
@@ -340,7 +340,7 @@ x *= 2;  // x is now 30
 
 
 ### Assignment
-
+---
 1. **C++ Arithmethic**:
 
    - Create a program that accepts two integers, `A` and `B`, from the user.
@@ -377,10 +377,10 @@ These questions provide a chance to think about the important topics covered in 
 - [What are the different parts of a C++ program?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#parts-of-a-basic-c-program)
 - [How do you display a message on the console in C++?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#parts-of-a-basic-c-program)
 - [What are the two methods for accepting user input in C++, and how do you implement them?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#input-and-output-in-c)
-- [What are the different C++ data types you can use?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#input-and-output-in-c)
-- [How do you create variables of different data types in C++ and initialize them with values?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#input-and-output-in-c)
-- [What are the C++ arithmetic operators?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#input-and-output-in-c)
-- [What are the C++ assignment operators?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#input-and-output-in-c)
+- [What are the different C++ data types you can use?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#variables-and-data-types)
+- [How do you create variables of different data types in C++ and initialize them with values?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#variables-and-data-types)
+- [What are the C++ arithmetic operators?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#arithmetic-operators)
+- [What are the C++ assignment operators?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#assignment-operators)
 
 
 <br>
