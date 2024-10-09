@@ -124,7 +124,7 @@ Conditional statements allow your program to make decisions based on certain con
 ### The `if`, `else if`, and `else` Statements
 
 - **`if` Statement**: Executes a block of code if a specified condition is `true`.
-- **`else if` Statement**: Checks an additional condition if the previous `if` condition was `false`.
+- **`else if` Statement**: Checks an additional condition if the previous `if` or `else if` condition was `false`.
 - **`else` Statement**: Executes a block of code if none of the previous conditions were `true`.
 
 **Syntax**:
