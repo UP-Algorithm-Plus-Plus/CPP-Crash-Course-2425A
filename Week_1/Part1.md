@@ -66,7 +66,7 @@ Learning to program can be challenging, and it's perfectly normal to have questi
 ### How to Contact the Lecturer:
 
 - **Email**: You can reach out to the lecturer of the week (Nelson) via his SimpleLogin email **simplelogin.agreement408@aleeas.com**
-- **Discord**: You can also ping the lecturer via Discord or send them a direct message!
+- **Discord**: You can also choose to send a direct message to Nelson via Discord. 
 - **Anonymous Emailing**: If you prefer to remain anonymous, consider using [SimpleLogin](https://simplelogin.io/) to create an anonymous email address for you to be able to annonymously email the lecturer.
 
 ### Recommended Tools:
