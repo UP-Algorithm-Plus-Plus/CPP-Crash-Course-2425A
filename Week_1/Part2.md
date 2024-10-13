@@ -346,6 +346,6 @@ In this section, we've:
 - **Explored Competitive Programming**: Gained an understanding of what competitive programming entails and how it can benefit your coding journey.
 
 
-<br>
+<br><br>
 
-Click [here]() to move on to the next part!
+Click [here](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_1/Part3.md) to move on to the next part!

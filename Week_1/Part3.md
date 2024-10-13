@@ -395,6 +395,6 @@ This section offers useful links to relevant content. It's optional and meant to
 - [How to accept user input in C++?](https://youtu.be/imiIhu9u670?si=wXMfukWzcjxbN-Gq)
 
 
-<br>
+<br><br>
 
-Click [here]() to move on to the next part!
+Click [here](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_1/Part4.md) to move on to the next part!

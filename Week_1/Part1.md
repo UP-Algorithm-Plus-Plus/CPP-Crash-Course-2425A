@@ -111,6 +111,6 @@ This section offers useful links to relevant content. It's optional and meant to
 
 
 
-<br>
+<br><br>
 
-Click [here]() to move on to the next part!
+Click [here](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_1/Part2.md) to move on to the next part!

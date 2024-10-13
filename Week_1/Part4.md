@@ -269,9 +269,9 @@ This section offers useful links to relevant content. It's optional and meant to
 In this lesson, we've delved into arrays and conditional statements, two foundational concepts in C++ programming. Arrays allow you to store and manage collections of data efficiently, while conditional statements enable your programs to make decisions based on dynamic conditions. By understanding and practicing these concepts, you're building a strong base for more complex programming tasks ahead. Remember to experiment with code examples and challenge yourself with the assignments to solidify your learning.
 
 
-<br>
+<br><br>
 
-Click [here]() to move on to the next part!
+Click [here](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_1/Part5.md) to move on to the next part!
 
 
 
