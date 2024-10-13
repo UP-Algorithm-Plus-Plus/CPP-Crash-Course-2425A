@@ -341,7 +341,7 @@ x *= 2;  // x is now 30
 
 ### Assignment
 ---
-1. **C++ Arithmethic**:
+1. **C++ Arithmetic**:
 
    - Create a program that accepts two integers, `A` and `B`, from the user.
    - Perform and print the results of the following operations: `A + B`, `A - B`, `A * B`, `A / B`, and `A % B`.
