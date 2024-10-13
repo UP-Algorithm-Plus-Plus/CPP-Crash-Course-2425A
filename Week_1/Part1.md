@@ -29,6 +29,8 @@ Remember, programming is a skill best learned by doing. So, make sure to type ou
 
 ---
 
+<br>
+
 ## How to Ask for Help
 
 Learning to program can be challenging, and it's perfectly normal to have questions or need assistance. Asking for help is an essential part of the learning process. This guide will help you formulate your questions effectively to get the most helpful responses.
@@ -65,40 +67,6 @@ Learning to program can be challenging, and it's perfectly normal to have questi
    - **Use Code Formatting Tools**: To make your code readable, use tools like [Carbon](https://carbon.now.sh/) or [GitHub Gist](https://gist.github.com/) and share your error codes via [Pastebin](https://pastebin.com/).
    - **Check for Typos**: Proofread your question to ensure clarity.
 
-### Example of a Good Question:
-
-> **Subject**: Need Help with While Loop Not Terminating in Week 1 Assignment
->
-> **Body**:
->
-> Hello,
->
-> I'm working on the assignment where I need to print numbers from `n` down to `1` using a `while` loop. However, my loop doesn't seem to terminate, and I'm not sure why. Here's the code snippet:
->
-> ```cpp
-> #include <iostream>
->
-> int main() {
->     int n;
->     std::cout << "Enter a positive integer: ";
->     std::cin >> n;
->
->     while (n >= 1) {
->         std::cout << n << std::endl;
->         // I think I'm missing something here
->     }
->
->     return 0;
-> }
-> ```
->
-> I suspect that the loop isn't updating the value of `n`, but I'm unsure how to fix it. I've tried adding `n--;` inside the loop, but it didn't work as expected.
->
-> Any guidance would be greatly appreciated!
->
-> Best regards,
-> [Your Name]
-
 ### How to Contact the Lecturer:
 
 - **Email**: You can reach out to the lecturer of the week (Nelson) via his SimpleLogin email **simplelogin.agreement408@aleeas.com**
@@ -119,6 +87,8 @@ Learning to program can be challenging, and it's perfectly normal to have questi
 
 ---
 
+<br>
+
 ## Summary
 
 In Week 1, we've embarked on an exciting journey into C++ programming. We've covered essential topics that form the building blocks for more advanced concepts. Remember, the key to mastering programming is practice and perseverance.
@@ -130,6 +100,8 @@ In Week 1, we've embarked on an exciting journey into C++ programming. We've cov
 
 ---
 
+<br>
+
 ## Knowledge Check
 These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
 - [What are the steps you should take before asking for help with your code?]()
@@ -139,6 +111,8 @@ These questions provide a chance to think about the important topics covered in 
 - [Why is it important to attempt solving a problem on your own before seeking assistance?]()
 
 ---
+
+<br>
 
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)

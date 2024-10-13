@@ -106,7 +106,9 @@ int main() {
 
 ---
 
-### Mini-Assignments: Loops
+<br>
+
+### Assignment
 
 1. **Print Numbers from 1 to 10 Using a `for` Loop**:
 
@@ -181,6 +183,8 @@ int main() {
 - [For Loop Practice Problems - HackerRank](https://www.hackerrank.com/challenges/for-loop-in-c/problem)
 
 ---
+
+<br>
 
 ## Functions
 
@@ -270,7 +274,9 @@ void greet() {
 
 ---
 
-### Mini-Assignments: Functions
+<br>
+
+### Assignment
 
 1. **Function to Return the Larger of Two Numbers**:
 
@@ -368,12 +374,7 @@ void greet() {
 
 ---
 
-### Additional Practice: Functions
-
-- [Functions in C++ - LearnCpp](https://www.learncpp.com/cpp-tutorial/functions/)
-- [Function Practice Problems - HackerRank](https://www.hackerrank.com/challenges/functions-in-c/problem)
-
----
+<br>
 
 ## Knowledge Check
 
@@ -386,12 +387,16 @@ These questions provide a chance to reflect on the important topics covered in t
 
 ---
 
+<br>
+
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
 - [UP Algo++ Control Flow and Loops Lecture Slides](https://docs.google.com/presentation/d/19vQAPQ4tASUD5gR1OjVtzKT7Ygc0HI8VTVcn_03uAaE/edit#slide=id.g164c8dcc09a_1_48)
 - [UP Algo++ Functions Lecture Slides](https://docs.google.com/presentation/d/1yNLnBwnIMmlVDKh6m-b6r_EPMyabi9EBiTr37HE6q9w/edit#slide=id.g164c8dcc09a_1_48)
 
 ---
+
+<br>
 
 ## Summary
 

@@ -82,6 +82,8 @@ int main() {
 
 ---
 
+<br>
+
 ### Assignment
 
 1. **Array Declaration**:
@@ -116,6 +118,8 @@ int main() {
    - **Hint**: Use `std::cout` to print the values.
 
 ---
+
+<br>
 
 ## Conditional Statements
 
@@ -198,6 +202,8 @@ int main() {
 
 ---
 
+<br>
+
 ### Assignment
 
 1. **Basic Calculator**:
@@ -233,6 +239,8 @@ int main() {
 
 ---
 
+<br>
+
 ## Knowledge Check
 
 These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
@@ -245,12 +253,16 @@ These questions provide a chance to think about the important topics covered in 
 
 ---
 
+<br>
+
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
 - [UP Algo++ Static Linear Data Structures Lecture Slides](https://docs.google.com/presentation/d/1K3jiqlSqMxRToh926U01xdX73ib2k4xXWa2EpYysHFU/edit#slide=id.g164c8dcc09a_1_48)
 - [UP Algo++ Control Flow and Loops Lecture Slides](https://docs.google.com/presentation/d/19vQAPQ4tASUD5gR1OjVtzKT7Ygc0HI8VTVcn_03uAaE/edit#slide=id.g164c8dcc09a_1_48)
 
 ---
+
+<br>
 
 ## Summary
 

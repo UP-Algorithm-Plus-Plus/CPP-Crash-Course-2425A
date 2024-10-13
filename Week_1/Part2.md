@@ -2,6 +2,8 @@
 
 ---
 
+<br>
+
 ## Introduction
 
 Welcome to **Week 1 Part 2** of the C++ Crash Course! Before diving deep into coding, it's essential to have a properly configured programming environment. This ensures that you can write, compile, and debug your C++ programs efficiently. Additionally, we'll introduce you to the exciting world of **competitive programming**, a domain where programmers tackle algorithmic problems under time constraints, enhancing both their coding skills and problem-solving abilities.
@@ -13,6 +15,8 @@ By the end of this section, you'll have:
 - Gained insight into competitive programming and how it can accelerate your learning.
 
 ---
+
+<br>
 
 ## Programming Environment Setup
 
@@ -163,6 +167,8 @@ g++ --version
 
 ---
 
+<br>
+
 ### Text Editors and IDEs
 
 If ever you wish to try out other IDEs or Text Editors, here are some recommendations!
@@ -182,6 +188,8 @@ If ever you wish to try out other IDEs or Text Editors, here are some recommenda
 
 ---
 
+<br>
+
 ### Compilers
 
 A compiler translates your C++ code into executable programs. The most commonly used C++ compilers are:
@@ -195,6 +203,8 @@ A compiler translates your C++ code into executable programs. The most commonly 
   - Known for faster compilation times and better error messages.
 
 ---
+
+<br>
 
 ## Getting Started with C++
 
@@ -267,6 +277,8 @@ Hello, World!
 
 Competitive programming is a mind sport where participants write programs to solve well-defined problems within time and memory constraints. It's an excellent way to improve your algorithmic thinking and coding skills.
 
+<br>
+
 ### What is Competitive Programming?
 
 - **Problem-Solving**: Tackle algorithmic challenges that test logic, mathematics, and coding proficiency.
@@ -289,61 +301,6 @@ Competitive programming is a mind sport where participants write programs to sol
 - **AtCoder**: [atcoder.jp](https://atcoder.jp/)
 - **Kattis**: [open.kattis.com](https://open.kattis.com/)
 
-### Getting Started
-
-1. **Choose a Platform**: Start with beginner-friendly platforms like HackerRank or LeetCode.
-
-2. **Understand the Problem Statement**:
-
-   - Read carefully to understand the requirements.
-   - Note input and output formats.
-
-3. **Plan Your Approach**:
-
-   - Identify the type of problem (e.g., sorting, dynamic programming).
-   - Think about possible algorithms and data structures.
-
-4. **Write and Test Your Code**:
-
-   - Write code in your local environment first.
-   - Test with sample inputs provided.
-
-5. **Submit and Iterate**:
-
-   - Submit your solution to the online judge.
-   - If it fails, analyze the feedback and debug accordingly.
-
-### Example Problem: Simple Addition
-
-**Problem Statement**:
-
-Write a program that takes two integers and outputs their sum.
-
-**Sample Input**:
-
-```
-3 7
-```
-
-**Sample Output**:
-
-```
-10
-```
-
-**Solution in C++**:
-
-```cpp
-#include <iostream>
-
-int main() {
-    int a, b;
-    std::cin >> a >> b; // Read two integers from input
-    std::cout << a + b << std::endl; // Output their sum
-    return 0;
-}
-```
-
 ### Tips for Success
 
 - **Practice Regularly**: Consistency is key to improvement.
@@ -353,11 +310,15 @@ int main() {
 
 ---
 
+<br>
+
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
 - [UP Algo++ Intro to Programming and Setting Things Up Lecture Slides](https://docs.google.com/presentation/d/1gi76ZAgk72WNhFAxkk6ybceheU_7G_9gF3UrnChkgZg/edit#slide=id.g164c8dcc09a_1_48)
 - [UP Algo++ The How to's of Competitive Programming Lecture Slides](https://docs.google.com/presentation/d/1Vn6f3Wz8f-wkIHIxFq5DklzPtwnFXY-4hsWzHX0Nno4/edit#slide=id.g164c8dcc09a_1_48)
 ---
+
+<br>
 
 ## Summary
 
