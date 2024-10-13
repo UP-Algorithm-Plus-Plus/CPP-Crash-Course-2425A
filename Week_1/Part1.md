@@ -109,4 +109,8 @@ This section offers useful links to relevant content. It's optional and meant to
 - [XY Problem](https://xyproblem.info/)
 - [How to Ask Technical Questions](https://www.theodinproject.com/guides/community/how_to_ask)
 
----
+
+
+<br>
+
+Click [here]() to move on to the next part!

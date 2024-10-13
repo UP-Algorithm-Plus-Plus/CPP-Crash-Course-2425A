@@ -411,4 +411,3 @@ In this lesson, we've explored two fundamental concepts in C++ programming: **lo
 
 By completing the mini-assignments and exploring the additional resources, you've gained practical experience with loops and functions, strengthening your understanding of these core programming constructs. Keep practicing, and don't hesitate to revisit these concepts as you continue your journey in learning C++.
 
----

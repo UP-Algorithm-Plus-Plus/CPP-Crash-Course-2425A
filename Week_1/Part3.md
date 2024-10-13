@@ -393,3 +393,8 @@ This section offers useful links to relevant content. It's optional and meant to
 - [Writing your first C++ Program](https://youtu.be/S3nx34WFXjI?si=bl7KWLkNVqV127f1&t=555)
 - [C++ Variables and Data Types](https://youtu.be/4psGUiKacPQ?si=ofueh2lltS3fswlY)
 - [How to accept user input in C++?](https://youtu.be/imiIhu9u670?si=wXMfukWzcjxbN-Gq)
+
+
+<br>
+
+Click [here]() to move on to the next part!
