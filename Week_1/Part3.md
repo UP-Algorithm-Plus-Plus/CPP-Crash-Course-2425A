@@ -386,9 +386,10 @@ These questions provide a chance to think about the important topics covered in 
 <br>
 
 ## Additional Resources
-This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources here require you you to have access to the Algo++ Google drive in order to view it.)
+This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
 - [UP Algo++ C++ Basics Lecture Slides](https://docs.google.com/presentation/d/1GTqu2WP6rm03Y3yAxIiNY4M2I0Lk1kRFdhG84h0_h7g/edit?usp=drive_link)
 - [UP Algo++ C++ Input/Output Lecture Slides](https://docs.google.com/presentation/d/171anDJYv_f7trafJEeXXEmoSze4iB0SCJBSn7I16MSg/edit?usp=drive_link)
+- [UP Algo++ Operators Lecture Slides](https://docs.google.com/presentation/d/1LPdjDwG50FknS5a6r6U_7k1mDqxk9QMrVt4uEKo8n70/edit#slide=id.g164c8dcc09a_1_48)
 - [Writing your first C++ Program](https://youtu.be/S3nx34WFXjI?si=bl7KWLkNVqV127f1&t=555)
 - [C++ Variables and Data Types](https://youtu.be/4psGUiKacPQ?si=ofueh2lltS3fswlY)
 - [How to accept user input in C++?](https://youtu.be/imiIhu9u670?si=wXMfukWzcjxbN-Gq)

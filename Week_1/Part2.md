@@ -2,22 +2,6 @@
 
 ---
 
-## 📋 Table of Contents
-- [Introduction](#introduction)
-- [Programming Environment Setup](#programming-environment-setup)
-  - [Choosing an Editor or IDE](#choosing-an-editor-or-ide)
-  - [Setting Up on Windows](#setting-up-on-windows)
-  - [Setting Up on macOS](#setting-up-on-macos)
-  - [Setting Up on Linux](#setting-up-on-linux)
-- [Getting Started with C++](#getting-started-with-c)
-  - [Writing Your First Program: Hello World](#writing-your-first-program-hello-world)
-  - [Basic Input/Output](#basic-inputoutput)
-- [Brief Introduction to Competitive Programming](#brief-introduction-to-competitive-programming)
-- [Additional Resources](#additional-resources)
-- [Summary](#summary)
-
----
-
 ## Introduction
 
 Welcome to **Week 1 Part 2** of the C++ Crash Course! Before diving deep into coding, it's essential to have a properly configured programming environment. This ensures that you can write, compile, and debug your C++ programs efficiently. Additionally, we'll introduce you to the exciting world of **competitive programming**, a domain where programmers tackle algorithmic problems under time constraints, enhancing both their coding skills and problem-solving abilities.
@@ -34,25 +18,15 @@ By the end of this section, you'll have:
 
 Setting up a programming environment involves installing a code editor or Integrated Development Environment (IDE), along with the necessary compilers and tools to write and run your programs. We'll guide you through the process for **Windows**, **macOS**, and **Linux** platforms.
 
-### Choosing an Editor or IDE
-
-Before installing compilers, decide on a code editor or IDE that suits your needs. Here are some popular options:
-
-- **Visual Studio Code**: A lightweight, extensible code editor with rich support for C++.
-- **Code::Blocks**: An open-source IDE specifically designed for C++.
-- **CLion**: A powerful C++ IDE by JetBrains (requires a subscription but offers a free trial).
-- **Eclipse CDT**: An IDE with support for C++ development.
-- **Visual Studio Community Edition** (Windows only): A full-featured IDE for C++ and other languages.
-
-For beginners, **Visual Studio Code** is highly recommended due to its simplicity and extensive plugin ecosystem.
-
 ---
 
 ### Setting Up on Windows
 
 #### Step 1: Install a Code Editor or IDE
 
-- **Visual Studio Code**:
+For beginners, **Visual Studio Code** is highly recommended due to its simplicity and extensive plugin ecosystem.
+
+- **To install it:**:
   - Download from [Visual Studio Code Website](https://code.visualstudio.com/).
   - Run the installer and follow the prompts.
 
@@ -94,22 +68,6 @@ To compile C++ code on Windows, you'll need to install the **MinGW-w64** compile
    ```
 
    - You should see the version information of `g++`.
-
-##### Option 2: Using Microsoft C++ Build Tools
-
-1. **Download Build Tools**:
-   - Visit the [Build Tools for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019) page.
-   - Download the "Build Tools for Visual Studio".
-
-2. **Install C++ Build Tools**:
-   - Run the installer.
-   - In the workload selection, choose **"Desktop development with C++"**.
-   - Proceed with the installation.
-
-3. **Configure Visual Studio Code**:
-   - Install the **C/C++ extension** in Visual Studio Code.
-   - Configure tasks and launch settings as per Microsoft's documentation.
-
 ---
 
 ### Setting Up on macOS
@@ -152,26 +110,34 @@ macOS comes with the **Clang** compiler, which is part of the Xcode Command Line
 
 Most Linux distributions come with the GNU Compiler Collection (**GCC**) pre-installed.
 
-#### Step 1: Install Build-Essential Package (if not already installed)
+#### Step 1: Install the compiler if not already installed
 
 - **For Debian/Ubuntu-based Systems**:
 
   ```bash
   sudo apt update
-  sudo apt install build-essential
+  sudo apt install gcc g++
   ```
 
 - **For Fedora**:
 
   ```bash
-  sudo dnf groupinstall "Development Tools"
+  sudo dnf update
+  sudo dnf install gcc gcc-c++
   ```
 
 - **For Arch Linux**:
 
   ```bash
-  sudo pacman -S base-devel
+  sudo pacman -Syu
+  sudo pacman -S gcc
   ```
+
+**Important Note:** Updating is not required but recommended. For **Arch users** though, while I am sure you already know this, always be careful when updating your system. Ensure you have backups. If ever you see an important update in your update list (e.g. Kernel, wayland, xorg, systemd, etc.), please be sure to check the following places to ensure that it is safe to update:
+- [Arch Wiki Home page](https://archlinux.org/)
+- [Arch Wiki Forums](https://bbs.archlinux.org/)
+- [Arch Subreddit](https://www.reddit.com/r/archlinux/)
+- [Arch Community Discord Server](https://discord.gg/archlinux)
 
 #### Step 2: Verify Compiler Installation
 
@@ -183,22 +149,11 @@ g++ --version
 
 #### Step 3: Install a Code Editor or IDE
 
-- **Visual Studio Code**:
+1. Install [Flatpak](https://flathub.org/setup) for your system
+2. Download [Visual Studio Code Flatpak](https://flathub.org/apps/com.visualstudio.code). You may also choose [Vscodium](https://flathub.org/apps/com.vscodium.codium) if you want a 100% open source version of VSCode, just note that there are fewer extensions in VSCodium. 
+3. You should find it in your app launcher now
 
-  - Download the `.deb` or `.rpm` package from the [Visual Studio Code Website](https://code.visualstudio.com/Download).
-  - Install the package using your package manager.
-    - For `.deb`:
-
-      ```bash
-      sudo dpkg -i ~/Downloads/code_*.deb
-      sudo apt-get install -f
-      ```
-
-    - For `.rpm`:
-
-      ```bash
-      sudo rpm -i ~/Downloads/code-*.rpm
-      ```
+**Note:** VSCode and VSCodium are both apps based on electron. You may face difficulty using them normally if your using Wayland/Xwayland instead of Xorg. If you do encounter problems, please ping `Nelson` in the Algo++ Discord Server. 
 
 #### Step 4: Install C/C++ Extension for Visual Studio Code
 
@@ -210,18 +165,16 @@ g++ --version
 
 ### Text Editors and IDEs
 
-Choosing the right text editor or IDE can enhance your productivity. Here are some options:
+If ever you wish to try out other IDEs or Text Editors, here are some recommendations!
 
 - **Text Editors**:
 
   - **Visual Studio Code**: Lightweight, extensible, and supports multiple languages.
   - **Sublime Text**: Fast and customizable.
-  - **Atom**: Open-source and hackable to the core.
   - **Vim/Neovim**: Highly efficient once mastered, great for those who prefer keyboard-only navigation.
 
 - **IDEs**:
 
-  - **Code::Blocks**: Good for beginners, easy to set up.
   - **Eclipse CDT**: Offers robust features and plugins.
   - **CLion**: Advanced features like code analysis and refactoring tools.
   - **NetBeans**: Supports multiple languages, including C++.
@@ -240,29 +193,6 @@ A compiler translates your C++ code into executable programs. The most commonly 
 - **Clang**:
   - Default on macOS, also available on Linux and Windows.
   - Known for faster compilation times and better error messages.
-
-- **Microsoft Visual C++ Compiler**:
-  - Part of the Visual Studio suite.
-  - Available on Windows.
-
----
-
-### Use External Resources
-
-Setting up a programming environment can be complex. Don't hesitate to consult external resources:
-
-- **Official Documentation**:
-  - [GCC Documentation](https://gcc.gnu.org/)
-  - [Visual Studio Code Docs](https://code.visualstudio.com/docs)
-  - [Microsoft C++ Documentation](https://docs.microsoft.com/en-us/cpp/)
-
-- **Community Guides and Tutorials**:
-  - [Setting Up Visual Studio Code for C++ Development](https://code.visualstudio.com/docs/cpp/config-mingw)
-  - [Beginner's Guide to C++ Compilers](https://www.learncpp.com/cpp-tutorial/introduction-to-compiling-and-linking/)
-
-- **Online Forums**:
-  - [Stack Overflow](https://stackoverflow.com/)
-  - [Reddit's r/cpp Community](https://www.reddit.com/r/cpp/)
 
 ---
 
@@ -330,54 +260,6 @@ Hello, World!
 
 - If you receive a "command not found" error, ensure your compiler is correctly installed and added to your system's PATH.
 - Double-check the code for typos, especially semicolons and include statements.
-
----
-
-### Basic Input/Output
-
-Let's extend the previous program to interact with the user.
-
-**Example: Basic Input/Output**
-
-```cpp
-#include <iostream>
-#include <string>
-
-int main() {
-    std::string name;
-    std::cout << "Enter your name: ";
-    std::getline(std::cin, name); // Read user input including spaces
-
-    std::cout << "Hello, " << name << "! Welcome to C++ programming." << std::endl;
-    return 0;
-}
-```
-
-**Explanation**:
-
-- **`#include <string>`**: Includes the string library to use `std::string`.
-- **`std::getline(std::cin, name);`**: Reads a full line of input (including spaces) and stores it in `name`.
-
-**Compilation and Execution**:
-
-- Compile:
-
-  ```bash
-  g++ your_program.cpp -o your_program
-  ```
-
-- Run:
-
-  ```bash
-  ./your_program
-  ```
-
-**Sample Interaction**:
-
-```
-Enter your name: Alice
-Hello, Alice! Welcome to C++ programming.
-```
 
 ---
 
@@ -472,22 +354,9 @@ int main() {
 ---
 
 ## Additional Resources
-
-- **Books**:
-  - *Competitive Programming 3* by Steven Halim and Felix Halim.
-  - *Introduction to Algorithms* by Cormen, Leiserson, Rivest, and Stein.
-
-- **Online Tutorials**:
-  - [GeeksforGeeks Algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
-  - [Topcoder Tutorials](https://www.topcoder.com/community/competitive-programming/tutorials/)
-
-- **Algorithm Visualizations**:
-  - [VisuAlgo](https://visualgo.net/en)
-
-- **Coding Practice Sites**:
-  - [Project Euler](https://projecteuler.net/)
-  - [SPOJ](https://www.spoj.com/)
-
+This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
+- [UP Algo++ Intro to Programming and Setting Things Up Lecture Slides](https://docs.google.com/presentation/d/1gi76ZAgk72WNhFAxkk6ybceheU_7G_9gF3UrnChkgZg/edit#slide=id.g164c8dcc09a_1_48)
+- [UP Algo++ The How to's of Competitive Programming Lecture Slides](https://docs.google.com/presentation/d/1Vn6f3Wz8f-wkIHIxFq5DklzPtwnFXY-4hsWzHX0Nno4/edit#slide=id.g164c8dcc09a_1_48)
 ---
 
 ## Summary
@@ -512,5 +381,4 @@ Remember, programming is a skill honed over time with practice and perseverance.
 
 ---
 
-# End of Document
 

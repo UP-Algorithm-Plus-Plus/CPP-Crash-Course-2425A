@@ -378,32 +378,18 @@ void greet() {
 ## Knowledge Check
 
 These questions provide a chance to reflect on the important topics covered in this lesson. If you're unsure of an answer, revisit the material.
-
-1. **What are the three main types of loops in C++, and when would you use each?**
-
-2. **How does passing parameters by value differ from passing by reference in functions?**
-
-3. **Explain the purpose of the `return` statement in a function.**
-
-4. **What is the difference between a function declaration and a function definition?**
-
-5. **Why is it important to avoid infinite loops, and how can you prevent them?**
+- [What are the three main types of loops in C++, and when would you use each?]()
+- [How does passing parameters by value differ from passing by reference in functions?]()
+- [Explain the purpose of the `return` statement in a function.]()
+- [What is the difference between a function declaration and a function definition?]()
+- [Why is it important to avoid infinite loops, and how can you prevent them?]()
 
 ---
 
 ## Additional Resources
-
-This section offers useful links to relevant content for further reading.
-
-- **Loops**:
-  - [C++ Control Structures - Loops](https://www.cplusplus.com/doc/tutorial/control/)
-  - [Understanding Loops in C++ - GeeksforGeeks](https://www.geeksforgeeks.org/loops-in-c-and-cpp/)
-  - [C++ Loop Tutorial - Programiz](https://www.programiz.com/cpp-programming/for-loop)
-
-- **Functions**:
-  - [C++ Functions - cplusplus.com](https://www.cplusplus.com/doc/tutorial/functions/)
-  - [Functions in C++ - GeeksforGeeks](https://www.geeksforgeeks.org/functions-in-cpp/)
-  - [C++ Function Tutorial - W3Schools](https://www.w3schools.com/cpp/cpp_functions.asp)
+This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
+- [UP Algo++ Control Flow and Loops Lecture Slides](https://docs.google.com/presentation/d/19vQAPQ4tASUD5gR1OjVtzKT7Ygc0HI8VTVcn_03uAaE/edit#slide=id.g164c8dcc09a_1_48)
+- [UP Algo++ Functions Lecture Slides](https://docs.google.com/presentation/d/1yNLnBwnIMmlVDKh6m-b6r_EPMyabi9EBiTr37HE6q9w/edit#slide=id.g164c8dcc09a_1_48)
 
 ---
 

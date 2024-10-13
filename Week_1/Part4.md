@@ -145,14 +145,14 @@ if (condition1) {
 #include <iostream>
 
 int main() {
-    int age = 20; // Initialize age
+    int wallet = 20; // Initialize wallet
 
-    if (age >= 18 && age < 21) {
-        std::cout << "You are considered an adult in many places." << std::endl;
-    } else if (age >= 21) {
-        std::cout << "You are considered an adult who can do what they want in any place of the world." << std::endl;
+    if (wallet == 20) {
+        std::cout << "Your wallet contains $20" << std::endl;
+    } else if (wallet < 20 && wallet != 0) {
+        std::cout << "Your wallet contains less than $20 and is not empty." << std::endl;
     } else {
-        std::cout << "You are not an adult." << std::endl;
+        std::cout << "Your wallet contains more than $20" << std::endl;
     }
 
     return 0;
@@ -161,17 +161,16 @@ int main() {
 
 **Explanation**:
 
-- **First Condition**: `if (age >= 18 && age < 21)`
-  - Checks if `age` is between `18` (inclusive) and `21` (exclusive).
-  - Uses the logical AND operator `&&` to combine two conditions.
-- **Second Condition**: `else if (age >= 21)`
-  - Checks if `age` is `21` or older.
+- **First Condition**: `if (wallet == 20)`
+  - Checks if `wallet` is equal to `20`
+- **Second Condition**: `else if (wallet < 20)`
+  - Checks if `wallet` is less than `20`.
 - **Else Block**:
   - Executes if none of the previous conditions are met.
-  - In this case, it means `age` is less than `18`.
+  - In this case, it means wallet has a value of more than `20`
 
 ### Logical Operators
-
+ These are used in if/else if statements to make code run under more complicated conditions. 
 - **AND (`&&`)**: True if both operands are true.
 - **OR (`||`)**: True if at least one operand is true.
 - **NOT (`!`)**: Inverts the truth value of the operand.
@@ -228,13 +227,8 @@ int main() {
 2. **Quadrant Selection Problem**:
 
    - Solve the [Quadrant Selection](https://open.kattis.com/problems/quadrant) problem on Kattis.
-   - **Problem Overview**:
-     - Given two integers representing the `x` and `y` coordinates of a point, determine which quadrant of the Cartesian coordinate system the point lies in.
-   - **Example**:
-     - Input: `12`, `5`
-     - Output: `1` (since both `x` and `y` are positive)
    - **Submission**:
-     - Write a program in C++ that reads the inputs and outputs the correct quadrant.
+     - Write your solution in C++.
      - Submit your solution on Kattis to get instant feedback.
 
 ---
@@ -243,30 +237,18 @@ int main() {
 
 These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
 
-- **Question 1**: What is an array in C++, and how do you declare one?
-- **Question 2**: How do you access the third element of an array named `numbers`?
-- **Question 3**: Explain the difference between `if`, `else if`, and `else` statements.
-- **Question 4**: How does the logical AND operator `&&` function in conditional statements?
-- **Question 5**: What will happen if you try to access an array element outside its defined range?
+- [What is an array in C++, and how do you declare one?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part4.md#arrays)
+- [How do you access the third element of an array named `numbers`?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part4.md#declaring-and-initializing-arrays)
+- [Explain the difference between `if`, `else if`, and `else` statements.](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part4.md#conditional-statements)
+- [How does the logical AND operator `&&` function in conditional statements? How about `||` and `!`?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part4.md#logical-operators)
+- [What will happen if you try to access an array element outside its defined range?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part4.md#declaring-and-initializing-arrays)
 
 ---
 
 ## Additional Resources
-
-This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.
-
-- **Arrays**:
-  - [C++ Arrays - cplusplus.com](http://www.cplusplus.com/doc/tutorial/arrays/)
-  - [Understanding Arrays in C++ - GeeksforGeeks](https://www.geeksforgeeks.org/arrays-in-c-cpp/)
-  - [C++ Arrays Tutorial - W3Schools](https://www.w3schools.com/cpp/cpp_arrays.asp)
-
-- **Conditional Statements**:
-  - [C++ Conditions and If Statements - W3Schools](https://www.w3schools.com/cpp/cpp_conditions.asp)
-  - [Conditional Statements in C++ - TutorialsPoint](https://www.tutorialspoint.com/cplusplus/cpp_decision_making.htm)
-  - [Logical Operators in C++ - Programiz](https://www.programiz.com/cpp-programming/logical-operators)
-
-- **Quadrant Selection Problem**:
-  - [Kattis - Quadrant Selection](https://open.kattis.com/problems/quadrant)
+This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
+- [UP Algo++ Static Linear Data Structures Lecture Slides](https://docs.google.com/presentation/d/1K3jiqlSqMxRToh926U01xdX73ib2k4xXWa2EpYysHFU/edit#slide=id.g164c8dcc09a_1_48)
+- [UP Algo++ Control Flow and Loops Lecture Slides](https://docs.google.com/presentation/d/19vQAPQ4tASUD5gR1OjVtzKT7Ygc0HI8VTVcn_03uAaE/edit#slide=id.g164c8dcc09a_1_48)
 
 ---
 

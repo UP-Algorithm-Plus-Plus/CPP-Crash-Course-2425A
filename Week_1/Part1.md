@@ -62,7 +62,7 @@ Learning to program can be challenging, and it's perfectly normal to have questi
 
 3. **Format Your Question Properly**:
 
-   - **Use Code Formatting Tools**: To make your code readable, use tools like [Carbon](https://carbon.now.sh/) or share it via [Pastebin](https://pastebin.com/).
+   - **Use Code Formatting Tools**: To make your code readable, use tools like [Carbon](https://carbon.now.sh/) or [GitHub Gist](https://gist.github.com/) and share your error codes via [Pastebin](https://pastebin.com/).
    - **Check for Typos**: Proofread your question to ensure clarity.
 
 ### Example of a Good Question:
@@ -101,14 +101,9 @@ Learning to program can be challenging, and it's perfectly normal to have questi
 
 ### How to Contact the Lecturer:
 
-- **Email**: You can reach out to the lecturer at **[cpp.week1.lecturer@example.com](mailto:cpp.week1.lecturer@example.com)**.
+- **Email**: You can reach out to the lecturer of the week (Nelson) via his SimpleLogin email **simplelogin.agreement408@aleeas.com**
+- **Discord**: You can also ping the lecturer via Discord or send them a direct message!
 - **Anonymous Emailing**: If you prefer to remain anonymous, consider using [SimpleLogin](https://simplelogin.io/) to create an anonymous email address.
-
-### Tips for Effective Communication:
-
-- **Be Polite and Professional**: A courteous tone goes a long way.
-- **Be Patient**: Allow some time for a response.
-- **Stay Engaged**: If you receive a reply asking for more information, respond promptly.
 
 ### Recommended Tools:
 
@@ -136,43 +131,20 @@ In Week 1, we've embarked on an exciting journey into C++ programming. We've cov
 ---
 
 ## Knowledge Check
-
-Test your understanding of this week's material with the following questions:
-
-1. **What are the steps you should take before asking for help with your code?**
-
-2. **How can you ask questions anonymously if you prefer not to share your personal email?**
-
-3. **What information should you include when asking for help to make it easier for others to assist you?**
-
-4. **Which tools can you use to format and share your code when seeking help?**
-
-5. **Why is it important to attempt solving a problem on your own before seeking assistance?**
+These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
+- [What are the steps you should take before asking for help with your code?]()
+- [How can you ask questions anonymously if you prefer not to share your personal email?]()
+- [What information should you include when asking for help to make it easier for others to assist you?]()
+- [Which tools can you use to format and share your code when seeking help?]()
+- [Why is it important to attempt solving a problem on your own before seeking assistance?]()
 
 ---
 
 ## Additional Resources
-
-- **C++ Documentation and Tutorials**:
-
-  - [C++ Reference - cplusplus.com](http://www.cplusplus.com/)
-  - [Learn C++ - LearnCpp.com](https://www.learncpp.com/)
-
-- **Code Formatting and Sharing**:
-
-  - [Carbon - Create and Share Code Images](https://carbon.now.sh/)
-  - [Pastebin - Share Text and Code Snippets](https://pastebin.com/)
-  - [GitHub Gist - Share Code Files](https://gist.github.com/)
-
-- **Anonymous Email Services**:
-
-  - [SimpleLogin](https://simplelogin.io/)
-
-- **Programming Communities**:
-
-  - [Stack Overflow](https://stackoverflow.com/) - Ask and answer programming questions.
-  - [Reddit's LearnProgramming Community](https://www.reddit.com/r/learnprogramming/) - Engage with fellow learners.
+This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
+- [Odin Project How to Ask For Help](https://www.theodinproject.com/lessons/foundations-asking-for-help)
+- [Don't ask to ask, just ask](https://dontasktoask.com/)
+- [XY Problem](https://xyproblem.info/)
+- [How to Ask Technical Questions](https://www.theodinproject.com/guides/community/how_to_ask)
 
 ---
-
-Feel free to revisit this guide anytime you need assistance or a refresher on how to proceed through the course effectively. Happy coding!
