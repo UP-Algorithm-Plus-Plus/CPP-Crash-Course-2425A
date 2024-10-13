@@ -1,7 +1,5 @@
 # C++ Crash Course Week 1 Part 2 ~ Coding Environment Setup & Competitive Programming Introduction
 
----
-
 ## Introduction
 
 Welcome to **Week 1 Part 2** of the C++ Crash Course! Before diving deep into coding, it's essential to have a properly configured programming environment. This ensures that you can write, compile, and debug your C++ programs efficiently. Additionally, we'll introduce you to the exciting world of **competitive programming**, a domain where programmers tackle algorithmic problems under time constraints, enhancing both their coding skills and problem-solving abilities.
@@ -14,7 +12,6 @@ By the end of this section, you'll have:
 
 <br>
 
----
 
 ## Programming Environment Setup
 
@@ -22,10 +19,8 @@ Setting up a programming environment involves installing a code editor or Integr
 
 <br>
 
----
 
 ### Setting Up on Windows
-
 #### Step 1: Install a Code Editor or IDE
 
 For beginners, **Visual Studio Code** is highly recommended due to its simplicity and extensive plugin ecosystem.
@@ -83,10 +78,8 @@ To compile C++ code on Windows (or translate C++ code to a language your compute
 
 <br>
 
----
 
 ### Setting Up on macOS
-
 #### Step 1: Install Xcode Command Line Tools
 
 macOS comes with the **Clang** compiler, which is part of the Xcode Command Line Tools.
@@ -121,10 +114,7 @@ macOS comes with the **Clang** compiler, which is part of the Xcode Command Line
 
 <br>
 
----
-
 ### Setting Up on Linux
-
 Most Linux distributions come with the GNU Compiler Collection (**GCC**) pre-installed.
 
 #### Step 1: Install the compiler if not already installed
@@ -180,7 +170,6 @@ g++ --version
 
 <br>
 
----
 
 ### Text Editors and IDEs
 
@@ -200,8 +189,6 @@ If ever you wish to try out other IDEs or Text Editors, here are some recommenda
   - **Visual Studio Community Edition** (Windows only): Comprehensive suite for development.
 
 <br>
-
----
 
 
 ## Getting Started with C++
@@ -269,7 +256,7 @@ Hello, World!
 - If you receive a "command not found" error, ensure your compiler is correctly installed and added to your system's PATH.
 - Double-check the code for typos, especially semicolons and include statements.
 
----
+<br>
 
 ## Brief Introduction to Competitive Programming
 
@@ -309,7 +296,6 @@ Competitive programming is a mind sport where participants write programs to sol
 
 <br>
 
----
 
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
@@ -318,7 +304,6 @@ This section offers useful links to relevant content. It's optional and meant to
 
 <br>
 
----
 
 ## Summary
 

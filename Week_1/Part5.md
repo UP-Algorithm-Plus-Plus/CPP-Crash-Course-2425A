@@ -104,12 +104,10 @@ int main() {
 - After the loop body, the condition `i < 5` is checked.
 - The loop continues if the condition is `true`.
 
----
-
 <br>
 
 ### Assignment
-
+---
 1. **Print Numbers from 1 to 10 Using a `for` Loop**:
 
    - **Objective**: Write a program that prints numbers from `1` to `10`.
@@ -124,8 +122,6 @@ int main() {
 
    - **Objective**: Write a program that takes a positive integer `n` as input and prints all numbers from `n` down to `1`.
    - **Hint**: Use a `while` loop and decrement the counter in each iteration.
-
----
 
 <br>
 
@@ -215,12 +211,10 @@ void greet() {
 }
 ```
 
----
-
 <br>
 
 ### Assignment
-
+---
 1. **Function to Return the Larger of Two Numbers**:
 
    - **Objective**: Write a function that takes two numbers as input and returns the larger of the two.
@@ -236,20 +230,16 @@ void greet() {
    - **Objective**: Write a program that asks for two numbers and uses a function to return their greatest common divisor (GCD).
    - **Hint**: Use the Euclidean algorithm for finding GCD.
 
----
-
 <br>
 
 ## Knowledge Check
 
 These questions provide a chance to reflect on the important topics covered in this lesson. If you're unsure of an answer, revisit the material.
-- [What are the three main types of loops in C++, and when would you use each?]()
-- [How does passing parameters by value differ from passing by reference in functions?]()
-- [Explain the purpose of the `return` statement in a function.]()
-- [What is the difference between a function declaration and a function definition?]()
-- [Why is it important to avoid infinite loops, and how can you prevent them?]()
-
----
+- [What are the three main types of loops in C++, and when would you use each?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_1/Part5.md#loops)
+- [How to create a function?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_1/Part5.md#functions)
+- [How does passing parameters by value differ from passing by reference in functions?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_1/Part5.md#functions)
+- [Explain the purpose of the `return` statement in a function.](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_1/Part5.md#functions)
+- [What is the difference between a function declaration and a function definition?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_1/Part5.md#functions)
 
 <br>
 
@@ -257,8 +247,6 @@ These questions provide a chance to reflect on the important topics covered in t
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
 - [UP Algo++ Control Flow and Loops Lecture Slides](https://docs.google.com/presentation/d/19vQAPQ4tASUD5gR1OjVtzKT7Ygc0HI8VTVcn_03uAaE/edit#slide=id.g164c8dcc09a_1_48)
 - [UP Algo++ Functions Lecture Slides](https://docs.google.com/presentation/d/1yNLnBwnIMmlVDKh6m-b6r_EPMyabi9EBiTr37HE6q9w/edit#slide=id.g164c8dcc09a_1_48)
-
----
 
 <br>
 

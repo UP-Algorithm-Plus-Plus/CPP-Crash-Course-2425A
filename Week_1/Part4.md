@@ -80,12 +80,11 @@ int main() {
 - The loop variable `i` starts at `0` and increments by `1` until it reaches `5`.
 - `numbers[i]` accesses each element in the array.
 
----
 
 <br>
 
 ### Assignment
-
+---
 1. **Array Declaration**:
 
    - Write a program that declares arrays for the following data types: `double`, `int`, `char`, and `std::string`.
@@ -116,8 +115,6 @@ int main() {
      - Print the **third element** of the `char` array.
      - Print **all elements** of the `std::string` array.
    - **Hint**: Use `std::cout` to print the values.
-
----
 
 <br>
 
@@ -199,13 +196,10 @@ int main() {
     return 0;
 }
 ```
-
----
-
 <br>
 
 ### Assignment
-
+---
 1. **Basic Calculator**:
 
    - Create a program that functions as a basic calculator.
@@ -237,8 +231,6 @@ int main() {
      - Write your solution in C++.
      - Submit your solution on Kattis to get instant feedback.
 
----
-
 <br>
 
 ## Knowledge Check
@@ -251,7 +243,6 @@ These questions provide a chance to think about the important topics covered in 
 - [How does the logical AND operator `&&` function in conditional statements? How about `||` and `!`?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part4.md#logical-operators)
 - [What will happen if you try to access an array element outside its defined range?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part4.md#declaring-and-initializing-arrays)
 
----
 
 <br>
 
@@ -260,7 +251,6 @@ This section offers useful links to relevant content. It's optional and meant to
 - [UP Algo++ Static Linear Data Structures Lecture Slides](https://docs.google.com/presentation/d/1K3jiqlSqMxRToh926U01xdX73ib2k4xXWa2EpYysHFU/edit#slide=id.g164c8dcc09a_1_48)
 - [UP Algo++ Control Flow and Loops Lecture Slides](https://docs.google.com/presentation/d/19vQAPQ4tASUD5gR1OjVtzKT7Ygc0HI8VTVcn_03uAaE/edit#slide=id.g164c8dcc09a_1_48)
 
----
 
 <br>
 

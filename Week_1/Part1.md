@@ -27,8 +27,6 @@ By the end of this week, you should be able to:
 
 Remember, programming is a skill best learned by doing. So, make sure to type out the examples, experiment with the code, and tackle the assignments proactively.
 
----
-
 <br>
 
 ## How to Ask for Help
@@ -82,8 +80,6 @@ Learning to program can be challenging, and it's perfectly normal to have questi
 - **Anonymous Email**:
 
   - **SimpleLogin**: Protect your identity while reaching out for help.
-
----
 
 <br>
 
