@@ -123,6 +123,9 @@ int main() {
    - **Objective**: Write a program that takes a positive integer `n` as input and prints all numbers from `n` down to `1`.
    - **Hint**: Use a `while` loop and decrement the counter in each iteration.
 
+4. **Solve this Kattis Problem!**
+   - [Stuck In A Time Loop](https://open.kattis.com/problems/timeloop)
+
 <br>
 
 ## Functions in C++ for Competitive Programming
@@ -345,3 +348,19 @@ In this lesson, we've explored two fundamental concepts in C++ programming: **lo
   - **Do-While Loops** guarantee that the loop body executes at least once, with the condition evaluated after each iteration.
 
 - **Functions** enable you to encapsulate code into reusable blocks, making your programs more organized and modular. By passing parameters and returning values, functions can perform specific tasks and computations that can be used throughout your program.
+
+<br>
+
+## Extra Problems (Optional)
+Try and solve the following problems in C++!
+- [Datum](https://open.kattis.com/problems/datum)
+- [Above Average](https://open.kattis.com/problems/aboveaverage)
+- [Hello World!](https://open.kattis.com/problems/hello)
+- [R2](https://open.kattis.com/problems/r2)
+- [Take Two Stones](https://open.kattis.com/problems/twostones)
+- [Tarifa](https://open.kattis.com/problems/tarifa)
+- [Cold-puter Science](https://open.kattis.com/problems/cold)
+- [Spavanac](https://open.kattis.com/problems/spavanac)
+- [Pot](https://open.kattis.com/problems/pot)
+- [Oddities](https://open.kattis.com/problems/oddities)
+- [Solving for Carrots](https://open.kattis.com/problems/carrots)
