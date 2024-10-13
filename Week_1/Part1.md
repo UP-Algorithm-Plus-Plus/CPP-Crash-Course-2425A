@@ -47,7 +47,6 @@ Learning to program can be challenging, and it's perfectly normal to have questi
 2. **Search for Similar Problems**:
 
    - **Online Resources**: Websites like Stack Overflow, GeeksforGeeks, or Cplusplus.com can be invaluable.
-   - **Course Forums**: If there's a discussion board, someone might have had a similar question.
 
 ### Crafting Your Question:
 
@@ -60,7 +59,6 @@ Learning to program can be challenging, and it's perfectly normal to have questi
 2. **Provide Context**:
 
    - **Share Relevant Code**: Include the portion of code that's causing the issue. Avoid sharing your entire program unless necessary.
-   - **Mention Your Setup**: Specify the compiler or development environment you're using.
 
 3. **Format Your Question Properly**:
 
@@ -71,7 +69,7 @@ Learning to program can be challenging, and it's perfectly normal to have questi
 
 - **Email**: You can reach out to the lecturer of the week (Nelson) via his SimpleLogin email **simplelogin.agreement408@aleeas.com**
 - **Discord**: You can also ping the lecturer via Discord or send them a direct message!
-- **Anonymous Emailing**: If you prefer to remain anonymous, consider using [SimpleLogin](https://simplelogin.io/) to create an anonymous email address.
+- **Anonymous Emailing**: If you prefer to remain anonymous, consider using [SimpleLogin](https://simplelogin.io/) to create an anonymous email address for you to be able to annonymously email the lecturer.
 
 ### Recommended Tools:
 
@@ -84,19 +82,6 @@ Learning to program can be challenging, and it's perfectly normal to have questi
 - **Anonymous Email**:
 
   - **SimpleLogin**: Protect your identity while reaching out for help.
-
----
-
-<br>
-
-## Summary
-
-In Week 1, we've embarked on an exciting journey into C++ programming. We've covered essential topics that form the building blocks for more advanced concepts. Remember, the key to mastering programming is practice and perseverance.
-
-- **Engage Actively**: Don't just read the code—write it, run it, and modify it.
-- **Ask Questions**: If you're stuck, reach out using the guidelines above.
-- **Reflect on What You've Learned**: Use the knowledge checks to assess your understanding.
-- **Stay Curious**: Explore additional resources to deepen your comprehension.
 
 ---
 

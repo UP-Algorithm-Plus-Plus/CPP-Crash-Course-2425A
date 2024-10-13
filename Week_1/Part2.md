@@ -2,8 +2,6 @@
 
 ---
 
-<br>
-
 ## Introduction
 
 Welcome to **Week 1 Part 2** of the C++ Crash Course! Before diving deep into coding, it's essential to have a properly configured programming environment. This ensures that you can write, compile, and debug your C++ programs efficiently. Additionally, we'll introduce you to the exciting world of **competitive programming**, a domain where programmers tackle algorithmic problems under time constraints, enhancing both their coding skills and problem-solving abilities.
@@ -14,17 +12,17 @@ By the end of this section, you'll have:
 - Written and executed your first C++ program.
 - Gained insight into competitive programming and how it can accelerate your learning.
 
----
-
 <br>
+
+---
 
 ## Programming Environment Setup
 
 Setting up a programming environment involves installing a code editor or Integrated Development Environment (IDE), along with the necessary compilers and tools to write and run your programs. We'll guide you through the process for **Windows**, **macOS**, and **Linux** platforms.
 
----
-
 <br>
+
+---
 
 ### Setting Up on Windows
 
@@ -32,15 +30,15 @@ Setting up a programming environment involves installing a code editor or Integr
 
 For beginners, **Visual Studio Code** is highly recommended due to its simplicity and extensive plugin ecosystem.
 
-- **To install it:**:
+- **To install it:**
   - Download from [Visual Studio Code Website](https://code.visualstudio.com/).
   - Run the installer and follow the prompts.
 
 #### Step 2: Install a C++ Compiler
 
-To compile C++ code on Windows, you'll need to install the **MinGW-w64** compiler or use the **Microsoft C++ Build Tools**.
+To compile C++ code on Windows (or translate C++ code to a language your computer would understand on Winows), you'll need to install the **MinGW-w64** compiler
 
-##### Option 1: Using MinGW-w64
+##### Installing MinGW-w64
 
 **Note** If you prefer a video guide, you can watch [this](https://youtu.be/oC69vlWofJQ?si=a0AU2jNLOmpdxHvc)
 
@@ -69,7 +67,7 @@ To compile C++ code on Windows, you'll need to install the **MinGW-w64** compile
 
 5. **Add to System Path**:
   
-  - Via the start menu, search for *Edit environment variables for your account* then click on it. 
+  - Via the start menu, search for `Edit environment variables for your account` then click on it. 
   - After that, click on path environment variable then press edit
   - Under the environment variable, click new and then browse
   - Add `C:\msys64\ucrt64\bin` to your system's PATH environment variable. This lets you use the latest C++ compiler.
@@ -82,9 +80,10 @@ To compile C++ code on Windows, you'll need to install the **MinGW-w64** compile
    ```
 
    - You should see the version information of `gcc`.
----
 
 <br>
+
+---
 
 ### Setting Up on macOS
 
@@ -120,9 +119,9 @@ macOS comes with the **Clang** compiler, which is part of the Xcode Command Line
 - Go to the **Extensions** view (click on the square icon on the sidebar).
 - Search for **C/C++** and install the extension by Microsoft.
 
----
-
 <br>
+
+---
 
 ### Setting Up on Linux
 
@@ -179,9 +178,9 @@ g++ --version
 - Go to the **Extensions** view.
 - Search for **C/C++** and install the extension.
 
----
-
 <br>
+
+---
 
 ### Text Editors and IDEs
 
@@ -200,25 +199,10 @@ If ever you wish to try out other IDEs or Text Editors, here are some recommenda
   - **NetBeans**: Supports multiple languages, including C++.
   - **Visual Studio Community Edition** (Windows only): Comprehensive suite for development.
 
----
-
 <br>
-
-### Compilers
-
-A compiler translates your C++ code into executable programs. The most commonly used C++ compilers are:
-
-- **GCC (GNU Compiler Collection)**:
-  - Available on Linux and via MinGW-w64 on Windows.
-  - Command to compile: `g++ program.cpp -o program`
-
-- **Clang**:
-  - Default on macOS, also available on Linux and Windows.
-  - Known for faster compilation times and better error messages.
 
 ---
 
-<br>
 
 ## Getting Started with C++
 
@@ -323,17 +307,18 @@ Competitive programming is a mind sport where participants write programs to sol
 - **Study Algorithms and Data Structures**: Build a strong foundation.
 - **Participate in Contests**: Apply your skills under time constraints.
 
----
-
 <br>
+
+---
 
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
 - [UP Algo++ Intro to Programming and Setting Things Up Lecture Slides](https://docs.google.com/presentation/d/1gi76ZAgk72WNhFAxkk6ybceheU_7G_9gF3UrnChkgZg/edit#slide=id.g164c8dcc09a_1_48)
 - [UP Algo++ The How to's of Competitive Programming Lecture Slides](https://docs.google.com/presentation/d/1Vn6f3Wz8f-wkIHIxFq5DklzPtwnFXY-4hsWzHX0Nno4/edit#slide=id.g164c8dcc09a_1_48)
----
 
 <br>
+
+---
 
 ## Summary
 
