@@ -24,6 +24,8 @@ Setting up a programming environment involves installing a code editor or Integr
 
 ---
 
+<br>
+
 ### Setting Up on Windows
 
 #### Step 1: Install a Code Editor or IDE
@@ -40,12 +42,14 @@ To compile C++ code on Windows, you'll need to install the **MinGW-w64** compile
 
 ##### Option 1: Using MinGW-w64
 
+**Note** If you prefer a video guide, you can watch [this](https://youtu.be/oC69vlWofJQ?si=a0AU2jNLOmpdxHvc)
+
 1. **Download MSYS2**:
    - Go to the [MSYS2 Website](https://www.msys2.org/) and download the installer.
 
 2. **Install MSYS2**:
    - Run the installer and follow the instructions.
-   - Open the MSYS2 terminal from the Start menu.
+   - Open the MSYS2 terminal from the Start menu.(Or use the MSYS terminal that appears)
 
 3. **Update Package Database**:
 
@@ -58,21 +62,29 @@ To compile C++ code on Windows, you'll need to install the **MinGW-w64** compile
 4. **Install MinGW-w64 Compiler**:
 
    ```bash
-   pacman -S --needed base-devel mingw-w64-x86_64-toolchain
+   pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain 
    ```
+
+   When prompted, press enter to accept the default number of packages then type Y when prompted then enter again.
 
 5. **Add to System Path**:
-
-   - Add `C:\msys64\mingw64\bin` to your system's PATH environment variable.
+  
+  - Via the start menu, search for *Edit environment variables for your account* then click on it. 
+  - After that, click on path environment variable then press edit
+  - Under the environment variable, click new and then browse
+  - Add `C:\msys64\ucrt64\bin` to your system's PATH environment variable. This lets you use the latest C++ compiler.
 
 6. **Verify Installation**:
-
+   Open up a command prompt and type
+   
    ```bash
-   g++ --version
+   gcc --version
    ```
 
-   - You should see the version information of `g++`.
+   - You should see the version information of `gcc`.
 ---
+
+<br>
 
 ### Setting Up on macOS
 
@@ -109,6 +121,8 @@ macOS comes with the **Clang** compiler, which is part of the Xcode Command Line
 - Search for **C/C++** and install the extension by Microsoft.
 
 ---
+
+<br>
 
 ### Setting Up on Linux
 
@@ -300,6 +314,7 @@ Competitive programming is a mind sport where participants write programs to sol
 - **LeetCode**: [www.leetcode.com](https://leetcode.com/)
 - **AtCoder**: [atcoder.jp](https://atcoder.jp/)
 - **Kattis**: [open.kattis.com](https://open.kattis.com/)
+- **Online Judge**: [onlinejudge.org](https://onlinejudge.org/)
 
 ### Tips for Success
 
@@ -329,16 +344,6 @@ In this section, we've:
 - **Written and Compiled Your First C++ Programs**: Created the classic "Hello, World!" program and experimented with basic input/output operations.
 
 - **Explored Competitive Programming**: Gained an understanding of what competitive programming entails and how it can benefit your coding journey.
-
-### Next Steps
-
-- **Practice Coding**: Try writing more programs to solidify your understanding.
-
-- **Join a Platform**: Sign up on a competitive programming site and solve beginner-level problems.
-
-- **Stay Curious**: Continue exploring additional resources and learning new concepts.
-
-Remember, programming is a skill honed over time with practice and perseverance. Don't hesitate to revisit topics, ask questions, and engage with the community. Happy coding!
 
 ---
 

@@ -102,18 +102,6 @@ In Week 1, we've embarked on an exciting journey into C++ programming. We've cov
 
 <br>
 
-## Knowledge Check
-These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
-- [What are the steps you should take before asking for help with your code?]()
-- [How can you ask questions anonymously if you prefer not to share your personal email?]()
-- [What information should you include when asking for help to make it easier for others to assist you?]()
-- [Which tools can you use to format and share your code when seeking help?]()
-- [Why is it important to attempt solving a problem on your own before seeking assistance?]()
-
----
-
-<br>
-
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
 - [Odin Project How to Ask For Help](https://www.theodinproject.com/lessons/foundations-asking-for-help)
