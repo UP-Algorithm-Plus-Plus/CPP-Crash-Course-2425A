@@ -262,8 +262,6 @@ Hello, World!
 
 Competitive programming is a mind sport where participants write programs to solve well-defined problems within time and memory constraints. It's an excellent way to improve your algorithmic thinking and coding skills.
 
-<br>
-
 ### What is Competitive Programming?
 
 - **Problem-Solving**: Tackle algorithmic challenges that test logic, mathematics, and coding proficiency.
