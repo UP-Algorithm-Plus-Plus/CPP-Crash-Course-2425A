@@ -318,10 +318,6 @@ Explore these platforms to practice and compete:
 
   [Visit UVa Online Judge](https://onlinejudge.org/)
 
-- **Topcoder**: Provides algorithm competitions alongside design and development challenges, with a focus on professional growth.
-
-  [Visit Topcoder](https://www.topcoder.com/)
-
 ### Tips for Success
 
 To excel in competitive programming, consider these strategies:
@@ -345,7 +341,6 @@ To excel in competitive programming, consider these strategies:
 Embarking on the journey of competitive programming is a commitment to continuous learning and self-improvement. It's not just about coding—it's about developing a mindset that approaches problems analytically and creatively. Whether you aim to compete internationally, prepare for technical interviews, or simply enjoy the intellectual challenge, competitive programming offers a fulfilling and enriching experience.
 
 <br>
-
 
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
