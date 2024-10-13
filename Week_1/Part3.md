@@ -34,7 +34,7 @@ int main() {                   // The main function where program execution begi
 ### Assignment
 ---
 1. Write the "Hello, World!" program yourself (type it manually for practice) and change the message to "Welcome to C++!". Then, compile and run it.
-2. Modify your code by adding another `std::cout` statement to print your name. Try running the program again.
+2. Create a new cpp file, copy your previous code, and modify your code by adding another `std::cout` statement to print your name. Try running the program again.
 
 <br>
 
@@ -142,7 +142,7 @@ int main() {
 
 2. **Handling Input Buffer**:
 
-   - Modify the previous program to first ask for the user's name using `std::cin >> name;`, then ask for the address using `std::getline()`. Handle the input buffer appropriately so that both inputs are correctly read and displayed.
+   - Create a new file and create a modified version of the previous program that first ask for the user's name using `std::cin >> name;`, then ask for the address using `std::getline()`. Handle the input buffer appropriately so that both inputs are correctly read and displayed.
 
 
 <br>
