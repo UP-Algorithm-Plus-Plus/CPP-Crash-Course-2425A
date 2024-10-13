@@ -115,72 +115,15 @@ int main() {
    - **Objective**: Write a program that prints numbers from `1` to `10`.
    - **Hint**: Start the loop variable at `1` and iterate while it's less than or equal to `10`.
 
-   **Example Solution**:
-
-   ```cpp
-   #include <iostream>
-
-   int main() {
-       for (int i = 1; i <= 10; i++) {
-           std::cout << i << std::endl;
-       }
-       return 0;
-   }
-   ```
-
 2. **Print the First 10 Numbers in the Fibonacci Sequence**:
 
    - **Objective**: Create a program that prints the first 10 numbers of the Fibonacci sequence.
    - **Hint**: The Fibonacci sequence starts with `0` and `1`, and each subsequent number is the sum of the previous two.
 
-   **Example Solution**:
-
-   ```cpp
-   #include <iostream>
-
-   int main() {
-       int n1 = 0, n2 = 1, n3;
-       std::cout << n1 << std::endl << n2 << std::endl;
-
-       for (int i = 2; i < 10; i++) {
-           n3 = n1 + n2;
-           std::cout << n3 << std::endl;
-           n1 = n2;
-           n2 = n3;
-       }
-       return 0;
-   }
-   ```
-
 3. **Print Numbers from `n` Down to 1 Using a `while` Loop**:
 
    - **Objective**: Write a program that takes a positive integer `n` as input and prints all numbers from `n` down to `1`.
    - **Hint**: Use a `while` loop and decrement the counter in each iteration.
-
-   **Example Solution**:
-
-   ```cpp
-   #include <iostream>
-
-   int main() {
-       int n;
-       std::cout << "Enter a positive integer: ";
-       std::cin >> n;
-
-       while (n >= 1) {
-           std::cout << n << std::endl;
-           n--;
-       }
-       return 0;
-   }
-   ```
-
----
-
-### Additional Practice: Loops
-
-- [C++ Loops Tutorial - LearnCpp](https://www.learncpp.com/cpp-tutorial/loops/)
-- [For Loop Practice Problems - HackerRank](https://www.hackerrank.com/challenges/for-loop-in-c/problem)
 
 ---
 
@@ -283,94 +226,15 @@ void greet() {
    - **Objective**: Write a function that takes two numbers as input and returns the larger of the two.
    - **Hint**: Use an `if-else` statement to compare the numbers.
 
-   **Example Solution**:
-
-   ```cpp
-   #include <iostream>
-
-   int max(int a, int b) {
-       if (a > b) {
-           return a;
-       } else {
-           return b;
-       }
-   }
-
-   int main() {
-       int num1, num2;
-       std::cout << "Enter two numbers: ";
-       std::cin >> num1 >> num2;
-
-       int larger = max(num1, num2);
-       std::cout << "The larger number is: " << larger << std::endl;
-
-       return 0;
-   }
-   ```
-
 2. **Function to Calculate the Factorial of a Number**:
 
    - **Objective**: Create a function that calculates the factorial of a non-negative integer.
    - **Hint**: Factorial of `n` is `n * (n-1) * (n-2) * ... * 1`. The factorial of `0` is `1`.
 
-   **Example Solution**:
-
-   ```cpp
-   #include <iostream>
-
-   unsigned long long factorial(int n) {
-       unsigned long long result = 1;
-       for (int i = 1; i <= n; i++) {
-           result *= i;
-       }
-       return result;
-   }
-
-   int main() {
-       int number;
-       std::cout << "Enter a non-negative integer: ";
-       std::cin >> number;
-
-       if (number < 0) {
-           std::cout << "Factorial is not defined for negative numbers." << std::endl;
-       } else {
-           std::cout << "Factorial of " << number << " is " << factorial(number) << std::endl;
-       }
-
-       return 0;
-   }
-   ```
-
 3. **Function to Return the Greatest Common Divisor (GCD)**:
 
    - **Objective**: Write a program that asks for two numbers and uses a function to return their greatest common divisor (GCD).
    - **Hint**: Use the Euclidean algorithm for finding GCD.
-
-   **Example Solution**:
-
-   ```cpp
-   #include <iostream>
-
-   int gcd(int a, int b) {
-       while (b != 0) {
-           int temp = b;
-           b = a % b;
-           a = temp;
-       }
-       return a;
-   }
-
-   int main() {
-       int num1, num2;
-       std::cout << "Enter two numbers: ";
-       std::cin >> num1 >> num2;
-
-       int result = gcd(num1, num2);
-       std::cout << "The GCD of " << num1 << " and " << num2 << " is " << result << std::endl;
-
-       return 0;
-   }
-   ```
 
 ---
 
