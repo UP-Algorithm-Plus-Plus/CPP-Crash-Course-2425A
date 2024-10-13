@@ -85,31 +85,11 @@ int main() {
 
 ### Assignment
 ---
-1. **Array Declaration**:
+1. **Array Declaration, Accessing, and Printing Elements**:
 
    - Write a program that declares arrays for the following data types: `double`, `int`, `char`, and `std::string`.
    - Each array should have 3 elements.
-   - **Example**:
-
-     ```cpp
-     #include <iostream>
-     #include <string>
-
-     int main() {
-         double decimalNumbers[3] = {2.718, 3.1415, 1.414};
-         int integers[3] = {10, 20, 30};
-         char letters[3] = {'X', 'Y', 'Z'};
-         std::string words[3] = {"Hello", "C++", "World"};
-
-         // Your code here
-
-         return 0;
-     }
-     ```
-
-2. **Accessing and Printing Elements**:
-
-   - Using the same program, perform the following:
+   - After that, have the program perform the following:
      - Print the **first element** of the `double` array.
      - Print the **second element** of the `int` array.
      - Print the **third element** of the `char` array.
