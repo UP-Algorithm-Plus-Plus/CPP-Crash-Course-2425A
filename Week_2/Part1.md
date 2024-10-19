@@ -15,3 +15,7 @@ Welcome to **Week 2** of the C++ Crash Course! This week is designed to introduc
   - Quick Sort
 
 Refer to [Week 1](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_1/Part1.md) for frequently asked questions. You can also chat me(rad) on discord!
+
+Let's go!! 
+
+[Start with Time Complexity](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_2/Part2.md)
