@@ -199,7 +199,7 @@ Because `2<4`, we store 2 first. So we then have,
 ```cpp
 {1,3} and {2,4}
 ```
-(Umulit lang so bat mo pa ginawa,,, -> bc di tayo sure if sorted ba talaga siya, the computer doesn't know that)
+(Umulit lang so bat mo pa ginawa,,, -> because di tayo sure if sorted ba talaga siya, the computer doesn't know that)
 
 We can then apply the **merging** to both halves.
 
@@ -327,7 +327,7 @@ Notice that the array is not completely sorted, but with our chosen `pivot=5` al
 
 ### STL Sorting Algorithm
 
-Even though learning how these algorithms work are useful so you know how they work and can manipulate them. Most of the time, you don't need to make these algorithms everytime you use them. We usually use the standard library.
+Even though learning how these algorithms work are useful so you know how they work and can manipulate them. Most of the time, you don't need to make these algorithms every time you use them. We usually use the standard library.
 
 The standard library has it's own sorting function.
 
