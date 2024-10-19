@@ -9,7 +9,6 @@
   - [The Rules](#the-rules)
   - [Common Time Complexities](#common-time-complexities)
   - [The Magic Number](#the-magic-number)
-- [Exercises](#exercises)
 - [Summary](#summary)
  
 ## Why learn time complexity?
@@ -252,4 +251,4 @@ In this section, we've:
 
 <br>
 
-Click [here](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_1/Part3.md) to move on to the next part!
+Click [here](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_2/Part3.md) to move on to the next part!
