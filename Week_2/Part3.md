@@ -386,7 +386,7 @@ sort(x.begin(), x.end(), [](const int &a, const int &b) {
 - [ ] Using the lambda functions for STL sorting algorithm. Sort a vector of integers such **even numbers are sorted in ascending** order and **odd numbers are sorted in descending order**, and **even numbers are treated smaller than odd numbers**.
  - Example: `input: 5 2 6 1 3 4` `output: 2 4 6 5 3 1`
 
-You can send me the code on discord!!
+Send me the code on discord for checking!!
 
 ## Summary
 
