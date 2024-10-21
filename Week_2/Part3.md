@@ -199,7 +199,8 @@ Because `2<4`, we store 2 first. So we then have,
 ```cpp
 {1,3} and {2,4}
 ```
-(Umulit lang so bat mo pa ginawa,,, -> bc di tayo sure if sorted ba talaga siya, the computer doesn't know that)
+
+>(Umulit lang so bat mo pa ginawa,,, -> bc di tayo sure if sorted ba talaga siya, the computer doesn't know that)
 
 We can then apply the **merging** to both halves.
 
@@ -325,6 +326,8 @@ x = {1, 5, 8, 9, 10, 7}
 
 Notice that the array is not completely sorted, but with our chosen `pivot=5` all elements that are less than 5 are to the left and greater than 5 to the right.
 
+We repeat the sorting on a segment not yet sorted.
+
 ### STL Sorting Algorithm
 
 Even though learning how these algorithms work are useful so you know how they work and can manipulate them. Most of the time, you don't need to make these algorithms everytime you use them. We usually use the standard library.
@@ -382,6 +385,8 @@ sort(x.begin(), x.end(), [](const int &a, const int &b) {
  - Example: `input: 1 2 3 4 5 6 7 8 9` `output: 1 2 4 5 7 8 3 6 9`
 - [ ] Using the lambda functions for STL sorting algorithm. Sort a vector of integers such **even numbers are sorted in ascending** order and **odd numbers are sorted in descending order**, and **even numbers are treated smaller than odd numbers**.
  - Example: `input: 5 2 6 1 3 4` `output: 2 4 6 5 3 1`
+
+You can send me the code on discord!!
 
 ## Summary
 
