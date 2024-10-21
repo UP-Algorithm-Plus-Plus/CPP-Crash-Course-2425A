@@ -142,7 +142,7 @@ Let's start with the basics.
 
     How do we characterize it's Big-O notation?? (✿´‿`)
 
-    We go back to the basics. The Big-O notation is just the number of iterations a loop. The loop iterates over all powers of two, so we just need to know **how many powers of two are there below `n`** or **how many times do I need to multiply two by itself to get to `n`**. $$O(x)\text{ where }2^x < n$$ We can use the `logarithm` function to get the value of $x$. The Big-O notation therefore is `O(log(n))`. Usually for loops where the counter is updated through a multiplication function it is of `O(log(n))`.
+    We go back to the basics. The Big-O notation is just the number of iterations a loop has. The loop iterates over all powers of two, so we just need to know **how many powers of two are there below `n`** or **how many times do I need to multiply two by itself to get to `n`**. $$O(x)\text{ where }2^x < n$$ We can use the `logarithm` function to get the value of $x$. The Big-O notation therefore is `O(log(n))`. Usually for loops where the counter is updated through a multiplication function it is of `O(log(n))`.
 
     >The next parts build upon the previous ideas. `(；一_一)`. You should have around 60% level of understanding of the previous topics before proceeding. You can also take a break right now!!
 
@@ -203,7 +203,7 @@ Let's start with the basics.
 
     > Okay?? But how do I know which one is larger??
 
-    We can now which one is larger by solving the equations inside. One trick is also to just input a very large number, whoever is the biggest stays.
+    We can now know which one is larger by solving the equations inside. One trick is also to just input a very large number, whoever is the biggest stays.
 
 ### Common Time Complexities
 
