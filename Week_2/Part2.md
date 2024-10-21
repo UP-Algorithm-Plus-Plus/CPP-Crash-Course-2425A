@@ -222,7 +222,7 @@ For purposes of competitive programming, you can simplify your program to any of
 
 ### The Magic Number
 
-The magic number is `100,000,000`. It means when you evaluate the Big-O notation, it should be less than the magic number.
+The magic number is `100,000,000`. It means when you evaluate the Big-O notation, it should be less than the magic number for it to run faster than 1 second.
 
 For example, let's say the constraints in the problem is that `n=5` then you can use any time-complexity including factorial time. But if `n=200000`, you are now limited to `O(nlog(n))` algorithms.
 
