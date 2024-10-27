@@ -1,7 +1,3 @@
-Here's an improved version with slight rephrasing, added context, and a few stylistic tweaks for clarity and flow.
-
----
-
 # Part 1: Static Arrays Extended
 
 ## Recall
@@ -66,6 +62,12 @@ int main() {
         }
     }
 
+    /*
+    Alternatively, you can initialize the two-dimensional array at the time of declaration like this:
+    int grid[3][4] = {{0, 1, 2, 3}, {1, 2, 3, 4}, {2, 3, 4, 5}};
+    This is only allowed during the declaration, not after the array has been created.
+    */
+
     // Accessing the 2D array
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < cols; ++j) {
@@ -91,7 +93,7 @@ int main() {
 | **Access**                      | O(1)            | Direct access via index                       |
 | **Insertion at End**            | O(1)            | Only if space is available                    |
 | **Insertion at Beginning/Middle** | O(n)         | Requires shifting elements                    |
-| **Deletion at End**             | O(1)            |                                               |
+| **Deletion at End**             | O(1)            | Removes the last element without shifting     |
 | **Deletion at Beginning/Middle** | O(n)         | Requires shifting elements                    |
 | **Search (Unsorted)**           | O(n)            | Linear search                                 |
 | **Search (Sorted)**             | O(log n)        | Binary search (only if the array is sorted)   |
@@ -124,9 +126,9 @@ Degree Program: [Program]
 
 ## Knowledge check
 These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
-- [What are the different parts of a C++ program?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#parts-of-a-basic-c-program)
-- [How do you display a message on the console in C++?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#parts-of-a-basic-c-program)
+- [How do you declare and initialize a two dimensional array?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part1.md#two-dimensional-arrays)
+- [How do you input and output data to and from a two dimensional array?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part1.md#two-dimensional-arrays)
 
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
-- 
+- [UP Algo++ Static Linear DS Lecture Slides](https://docs.google.com/presentation/d/1K3jiqlSqMxRToh926U01xdX73ib2k4xXWa2EpYysHFU/edit#slide=id.g164c8dcc09a_1_48)
