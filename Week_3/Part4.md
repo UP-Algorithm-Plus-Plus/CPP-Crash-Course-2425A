@@ -1,82 +1,73 @@
-# Part 4: Pairs and Tuples
+# Part 4: Linked Lists
 
-In this part, we will explore **pairs** and **tuples**, which are useful data structures in C++ for grouping multiple values together.
+In this part, we will explore **linked lists**, which are fundamental data structures in computer science. Linked lists are sequences of nodes where each node contains data and a pointer to the next node (and possibly the previous node). We will cover both **singly linked lists** and **doubly linked lists**.
 
-## Pairs
+## Singly Linked Lists
 
-A **pair** is a container that stores two values, which may be of different types. It is defined in the `<utility>` header.
+A **singly linked list** is a linear data structure where each element (node) points to the next node in the sequence. The last node points to `nullptr`, indicating the end of the list.
 
-### Using `pair`
+### Structure of a Singly Linked List Node
 
-To use a `pair`, include the `<utility>` header and use the `pair` template class.
-
-```cpp
-#include <iostream>
-#include <utility> // Include the utility header for pair
-#include <string>
-
-using namespace std;
-
-int main() {
-    // Declaring a pair with a string and an int
-    pair<string, int> person;
-
-    // Assigning values to the pair
-    person.first = "Bob";
-    person.second = 25;
-
-    // Alternatively, you can initialize it using make_pair
-    // pair<string, int> person = make_pair("Bob", 25);
-
-    // Accessing the elements of the pair
-    cout << person.first << " is " << person.second << " years old." << endl;
-    // Output: Bob is 25 years old.
-
-    return 0;
-}
-```
-
-**Explanation:**
-
-- **Declaration:** We declare a `pair` named `person` that holds a `string` and an `int`.
-- **Assignment:** We assign values to `person.first` and `person.second`.
-- **Accessing Elements:** We access the elements using `.first` and `.second`.
-
-### Common Uses in Competitive Programming
-
-Pairs are often used in competitive programming for:
-
-- **Coordinates:** `pair<int, int>` to represent `(x, y)` positions.
-- **Graph Edges:** `pair<int, int>` to represent edges between nodes.
-- **Key-Value Pairs:** Storing key-value pairs in maps.
-
-**Example: Storing Coordinates**
+In C++, we can define a node for a singly linked list using a `struct` or `class`. Each node contains the data and a pointer to the next node.
 
 ```cpp
 #include <iostream>
-#include <vector>
 using namespace std;
 
-int main() {
-    // Vector of pairs to store points
-    vector<pair<int, int>> points;
+struct Node {
+    int data;       // Data stored in the node
+    Node* next;     // Pointer to the next node
 
-    // Adding points to the vector
-    points.push_back({1, 2});
-    points.push_back({3, 4});
-    points.push_back({5, 6});
-
-    // Iterating over the vector of pairs
-    cout << "Points:" << endl;
-    for (auto p : points) {
-        cout << "(" << p.first << ", " << p.second << ")" << endl;
+    // Constructor to initialize the node
+    Node(int val) {
+        data = val;
+        next = nullptr;
     }
-    /* Output:
-    Points:
-    (1, 2)
-    (3, 4)
-    (5, 6)
-    */
+};
+```
+
+### Creating and Traversing a Singly Linked List
+
+Let's create a simple singly linked list with three nodes and traverse it.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+struct Node {
+    int data;
+    Node* next;
+
+    // Constructor
+    Node(int val) : data(val), next(nullptr) {}
+};
+
+int main() {
+    // Creating individual nodes
+    Node* head = new Node(10);
+    Node* second = new Node(20);
+    Node* third = new Node(30);
+
+    // Linking the nodes together
+    head->next = second;
+    second->next = third;
+
+    // Traversing the list
+    Node* current = head;
+    cout << "Singly Linked List elements: ";
+    while (current != nullptr) {
+        cout << current->data << " ";
+        current = current->next;
+    }
+    // Output: Singly Linked List elements: 10 20 30
+
+    // Freeing allocated memory
+    current = head;
+    while (current != nullptr) {
+        Node* temp = current;
+        current = current->next;
+        delete temp;
+    }
 
     return 0;
 }
@@ -84,11 +75,50 @@ int main() {
 
 **Explanation:**
 
-- **Vector of Pairs:** We use `vector<pair<int, int>>` to store multiple coordinate points.
-- **Adding Elements:** We use `push_back` to add pairs to the vector.
-- **Accessing Elements:** We access the elements using `.first` and `.second`.
+- **Node Creation:** We create three nodes with values 10, 20, and 30.
+- **Linking Nodes:** We set the `next` pointer of each node to link them together.
+- **Traversal:** We use a `while` loop to traverse the list and print each node's data.
+- **Memory Management:** We delete each node to free up memory.
 
-<br>
+### Inserting a Node at the Beginning
+
+To insert a new node at the beginning of the list, you adjust the `next` pointer of the new node to point to the current head and update the head to be the new node.
+
+```cpp
+void insertAtBeginning(Node*& head, int val) {
+    Node* newNode = new Node(val);
+    newNode->next = head;
+    head = newNode;
+}
+```
+
+**Usage:**
+
+```cpp
+int main() {
+    Node* head = nullptr; // Start with an empty list
+
+    insertAtBeginning(head, 30);
+    insertAtBeginning(head, 20);
+    insertAtBeginning(head, 10);
+
+    // Now the list is: 10 -> 20 -> 30
+
+    // Traversal code as before...
+}
+```
+
+### Time Complexities for Singly Linked Lists
+
+| Operation                   | Time Complexity | Explanation                                       |
+|-----------------------------|-----------------|---------------------------------------------------|
+| **Access by Index**         | O(n)            | Must traverse from the head                       |
+| **Insertion at Beginning**  | O(1)            | Adjust pointers to insert node at the start       |
+| **Insertion at End**        | O(n)            | Must traverse to the end to insert                |
+| **Deletion of a Node**      | O(n)            | Need to find the node and adjust pointers         |
+| **Search**                  | O(n)            | Must traverse nodes to find the element           |
+
+---
 
 ### Assignment
 
@@ -96,148 +126,330 @@ int main() {
 
 **Task:** Write a C++ program that:
 
-1. Creates a `pair` to store a country's name and its population (as an integer).
-2. Initializes the pair with a country of your choice.
-3. Prints out the country's name and population.
+1. Creates an empty singly linked list.
+2. Inserts five integers entered by the user at the **end** of the list.
+3. Traverses the list and prints the elements.
+
+**Example Input:**
+
+```
+Enter 5 integers:
+10 20 30 40 50
+```
 
 **Example Output:**
 
 ```
-Country: Canada
-Population: 37742154
-```
-
-**Hint:** Use `pair<string, int>` and initialize it using `make_pair` or by directly assigning to `.first` and `.second`.
-
----
-
-<br>
-
-## Tuples
-
-A **tuple** can store multiple values of different types. Unlike pairs, tuples can hold more than two elements. Tuples are defined in the `<tuple>` header.
-
-### Using `tuple`
-
-To use a `tuple`, include the `<tuple>` header and use the `tuple` template class.
-
-```cpp
-#include <iostream>
-#include <tuple> // Include the tuple header
-#include <string>
-
-using namespace std;
-
-int main() {
-    // Declaring a tuple with a string, int, and char
-    tuple<string, int, char> person;
-
-    // Assigning values to the tuple using make_tuple
-    person = make_tuple("Charlie", 30, 'M');
-
-    // Alternatively, you can initialize it directly
-    // tuple<string, int, char> person("Charlie", 30, 'M');
-
-    // Accessing tuple elements using std::get
-    cout << get<0>(person) << ", Age: " << get<1>(person) << ", Gender: " << get<2>(person) << endl;
-    // Output: Charlie, Age: 30, Gender: M
-
-    // Modifying tuple elements
-    get<1>(person) = 31; // Updating age to 31
-
-    // Printing updated tuple
-    cout << get<0>(person) << " is now " << get<1>(person) << " years old." << endl;
-    // Output: Charlie is now 31 years old.
-
-    return 0;
-}
-```
-
-**Explanation:**
-
-- **Declaration:** We declare a `tuple` named `person` that holds a `string`, `int`, and `char`.
-- **Initialization:** We use `make_tuple` to initialize the tuple.
-- **Accessing Elements:** We use `get<index>(tuple)` to access elements.
-- **Modifying Elements:** We can modify elements by assigning to `get<index>(tuple)`.
-
-### When to Use Tuples
-
-- **Multiple Return Values:** Functions can return multiple values using a tuple.
-- **Grouping Data:** When you need to group more than two related values.
-- **Less Common in Competitive Programming:** Tuples are less commonly used in competitive programming due to their verbosity but can be useful in certain cases.
-
-**Example: Returning Multiple Values from a Function**
-
-```cpp
-#include <iostream>
-#include <tuple>
-using namespace std;
-
-// Function that returns multiple values using a tuple
-tuple<int, int, int> calculate(int a, int b) {
-    int sum = a + b;
-    int diff = a - b;
-    int prod = a * b;
-    return make_tuple(sum, diff, prod);
-}
-
-int main() {
-    int a = 5, b = 3;
-
-    // Calling the function and storing the returned tuple
-    tuple<int, int, int> results = calculate(a, b);
-
-    // Unpacking the tuple
-    int sum, diff, prod;
-    tie(sum, diff, prod) = results;
-
-    cout << "Sum: " << sum << endl;       // Output: Sum: 8
-    cout << "Difference: " << diff << endl; // Output: Difference: 2
-    cout << "Product: " << prod << endl;    // Output: Product: 15
-
-    return 0;
-}
-```
-
-**Explanation:**
-
-- **Function Returning Tuple:** The `calculate` function returns a tuple containing three integers.
-- **Unpacking Tuple:** We use `tie` to unpack the tuple into separate variables.
-
-<br>
-
-### Assignment
-
----
-
-**Task:** Write a C++ program that:
-
-1. Defines a `tuple` to store a student's name (`string`), age (`int`), grade (`char`), and GPA (`double`).
-2. Initializes the tuple with a student's information.
-3. Prints out each piece of information.
-
-**Example Output:**
-
-```
-Name: Emily
-Age: 22
-Grade: A
-GPA: 3.9
+Elements in the list: 10 20 30 40 50
 ```
 
 **Hint:**
 
-- Use `tuple<string, int, char, double> student`.
-- Access elements using `get<index>(student)`.
-- You can use `make_tuple` to initialize the tuple.
+- Use a loop to read integers from the user.
+- For insertion at the end, you need to traverse to the last node each time or maintain a tail pointer.
 
 ---
 
 <br>
 
-By understanding how to use pairs and tuples, you can efficiently group and manage multiple related data elements in your C++ programs.
+## Doubly Linked Lists
+
+A **doubly linked list** is a linked list where each node contains pointers to both the **next** and **previous** nodes. This allows traversal in both forward and backward directions.
+
+### Structure of a Doubly Linked List Node
+
+```cpp
+#include <iostream>
+using namespace std;
+
+struct Node {
+    int data;       // Data stored in the node
+    Node* next;     // Pointer to the next node
+    Node* prev;     // Pointer to the previous node
+
+    // Constructor to initialize the node
+    Node(int val) {
+        data = val;
+        next = nullptr;
+        prev = nullptr;
+    }
+};
+```
+
+### Creating and Traversing a Doubly Linked List
+
+Let's create a doubly linked list with three nodes and traverse it both forward and backward.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+struct Node {
+    int data;
+    Node* next;
+    Node* prev;
+
+    // Constructor
+    Node(int val) : data(val), next(nullptr), prev(nullptr) {}
+};
+
+int main() {
+    // Creating nodes
+    Node* head = new Node(10);
+    Node* second = new Node(20);
+    Node* third = new Node(30);
+
+    // Linking nodes
+    head->next = second;
+    second->prev = head;
+
+    second->next = third;
+    third->prev = second;
+
+    // Traversing forward
+    Node* current = head;
+    cout << "Doubly Linked List elements (forward): ";
+    while (current != nullptr) {
+        cout << current->data << " ";
+        if (current->next == nullptr) break; // Stop at the last node
+        current = current->next;
+    }
+    // Output: Doubly Linked List elements (forward): 10 20 30
+
+    // Traversing backward
+    cout << "\nDoubly Linked List elements (backward): ";
+    while (current != nullptr) {
+        cout << current->data << " ";
+        current = current->prev;
+    }
+    // Output: Doubly Linked List elements (backward): 30 20 10
+
+    // Freeing allocated memory
+    current = head;
+    while (current != nullptr) {
+        Node* temp = current;
+        current = current->next;
+        delete temp;
+    }
+
+    return 0;
+}
+```
+
+**Explanation:**
+
+- **Node Creation and Linking:** We create nodes and link them using both `next` and `prev` pointers.
+- **Forward Traversal:** Starting from `head`, we move to `next` nodes.
+- **Backward Traversal:** Starting from the last node, we move to `prev` nodes.
+- **Memory Management:** We delete each node to free up memory.
+
+### Inserting a Node at the Beginning
+
+```cpp
+void insertAtBeginning(Node*& head, int val) {
+    Node* newNode = new Node(val);
+    newNode->next = head;
+    if (head != nullptr)
+        head->prev = newNode;
+    head = newNode;
+}
+```
+
+**Usage:**
+
+```cpp
+int main() {
+    Node* head = nullptr; // Start with an empty list
+
+    insertAtBeginning(head, 30);
+    insertAtBeginning(head, 20);
+    insertAtBeginning(head, 10);
+
+    // Now the list is: 10 <-> 20 <-> 30
+
+    // Traversal code as before...
+}
+```
+
+### Time Complexities for Doubly Linked Lists
+
+| Operation                   | Time Complexity | Explanation                                            |
+|-----------------------------|-----------------|--------------------------------------------------------|
+| **Access by Index**         | O(n)            | Must traverse from the head                            |
+| **Insertion at Beginning**  | O(1)            | Adjust pointers to insert node at the start            |
+| **Insertion at End**        | O(1) if tail is maintained, O(n) otherwise | With a tail pointer, we can insert in O(1) time |
+| **Deletion of a Node**      | O(1)            | If the node is known; adjust pointers                  |
+| **Search**                  | O(n)            | Must traverse nodes to find the element                |
 
 ---
+
+### Assignment
+
+---
+
+**Task:** Write a C++ program that:
+
+1. Creates an empty doubly linked list.
+2. Inserts integers entered by the user at the **beginning** of the list.
+3. After insertion, traverses the list forward and prints the elements.
+4. Then traverses the list backward and prints the elements.
+
+**Example Input:**
+
+```
+Enter numbers to insert at the beginning (-1 to stop):
+5 10 15 20 -1
+```
+
+**Example Output:**
+
+```
+Elements in the list (forward): 20 15 10 5
+Elements in the list (backward): 5 10 15 20
+```
+
+**Hint:**
+
+- Use a loop to read integers until `-1` is entered.
+- For insertion at the beginning, adjust both `next` and `prev` pointers.
+
+---
+
+By understanding linked lists, you gain insight into how dynamic data structures work and how to manage memory manually in C++. Linked lists are fundamental in computer science and are the basis for many advanced data structures.
+
+---
+
+# Singly Linked List Assignment Solution Example
+
+Here's a sample code to help you get started with the singly linked list assignment.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+struct Node {
+    int data;
+    Node* next;
+
+    Node(int val) : data(val), next(nullptr) {}
+};
+
+void insertAtEnd(Node*& head, int val) {
+    Node* newNode = new Node(val);
+    if (head == nullptr) {
+        head = newNode;
+        return;
+    }
+    Node* current = head;
+    while (current->next != nullptr) {
+        current = current->next;
+    }
+    current->next = newNode;
+}
+
+void printList(Node* head) {
+    cout << "Elements in the list: ";
+    Node* current = head;
+    while (current != nullptr) {
+        cout << current->data << " ";
+        current = current->next;
+    }
+    cout << endl;
+}
+
+int main() {
+    Node* head = nullptr;
+    int num;
+    cout << "Enter 5 integers:" << endl;
+    for (int i = 0; i < 5; ++i) {
+        cin >> num;
+        insertAtEnd(head, num);
+    }
+
+    printList(head);
+
+    // Freeing allocated memory
+    Node* current = head;
+    while (current != nullptr) {
+        Node* temp = current;
+        current = current->next;
+        delete temp;
+    }
+
+    return 0;
+}
+```
+
+# Doubly Linked List Assignment Solution Example
+
+Here's a sample code to help you with the doubly linked list assignment.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+struct Node {
+    int data;
+    Node* next;
+    Node* prev;
+
+    Node(int val) : data(val), next(nullptr), prev(nullptr) {}
+};
+
+void insertAtBeginning(Node*& head, int val) {
+    Node* newNode = new Node(val);
+    newNode->next = head;
+    if (head != nullptr)
+        head->prev = newNode;
+    head = newNode;
+}
+
+void printListForward(Node* head) {
+    cout << "Elements in the list (forward): ";
+    Node* current = head;
+    Node* last = nullptr;
+    while (current != nullptr) {
+        cout << current->data << " ";
+        if (current->next == nullptr)
+            last = current;
+        current = current->next;
+    }
+    cout << endl;
+
+    // Printing backward
+    cout << "Elements in the list (backward): ";
+    current = last;
+    while (current != nullptr) {
+        cout << current->data << " ";
+        current = current->prev;
+    }
+    cout << endl;
+}
+
+int main() {
+    Node* head = nullptr;
+    int num;
+    cout << "Enter numbers to insert at the beginning (-1 to stop):" << endl;
+    while (true) {
+        cin >> num;
+        if (num == -1)
+            break;
+        insertAtBeginning(head, num);
+    }
+
+    printListForward(head);
+
+    // Freeing allocated memory
+    Node* current = head;
+    while (current != nullptr) {
+        Node* temp = current;
+        current = current->next;
+        delete temp;
+    }
+
+    return 0;
+}
+```
 
 ## Knowledge check
 These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
