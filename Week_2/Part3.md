@@ -330,7 +330,7 @@ We repeat the sorting on a segment not yet sorted.
 
 ### STL Sorting Algorithm
 
-Even though learning how these algorithms work are useful so you know how they work and can manipulate them. Most of the time, you don't need to make these algorithms everytime you use them. We usually use the standard library.
+Even though learning how these algorithms work are useful so you know how they work and can manipulate them. Most of the time, you don't need to make these algorithms every time you use them. We usually use the standard library.
 
 The standard library has it's own sorting function.
 

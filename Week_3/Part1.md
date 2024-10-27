@@ -86,7 +86,7 @@ int main() {
 ```
 <br>
 
-## Time Complexities for Array Operations
+#### Time Complexities for Array Operations
 
 | Operation                       | Time Complexity | Explanation                                   |
 |---------------------------------|-----------------|-----------------------------------------------|
@@ -100,7 +100,7 @@ int main() {
 
 <br>
 
-## Assignment
+#### Assignment
 
 1. Declare and initialize a two-dimensional array in which each element contains information about a student. Each student record should include 3 elements: the student’s name, year, and degree program. Populate the array with details of 5 students (fictional or real). Then, print the details of each student in this format:
 

@@ -1,6 +1,3 @@
-## Part 2: Dynamic Linear Data Structures
-
-```markdown
 # Part 2: Dynamic Linear Data Structures
 
 ## Vectors
@@ -44,11 +41,15 @@ int main() {
 
 ### Time Complexities for Vectors
 
-- **Access**: O(1)
-- **Insertion/Deletion at End**: Amortized O(1)
-- **Insertion/Deletion at Beginning/Middle**: O(n)
-- **Search (Unsorted)**: O(n)
-- **Search (Sorted)**: O(log n) with algorithms like `binary_search`
+| Operation                           | Time Complexity      | Explanation                                       |
+|-------------------------------------|----------------------|---------------------------------------------------|
+| **Access**                          | O(1)                 | Direct access to element via index                |
+| **Insertion/Deletion at End**       | Amortized O(1)       | Efficient, but may occasionally require resizing  |
+| **Insertion/Deletion at Beginning/Middle** | O(n)        | Requires shifting elements                        |
+| **Search (Unsorted)**               | O(n)                 | Linear search through the vector                  |
+| **Search (Sorted)**                 | O(log n)             | Binary search, requires sorted vector             |
+
+<br>
 
 ## Strings as Vectors
 
@@ -82,10 +83,19 @@ int main() {
 
 ### Time Complexities for Strings
 
-- **Access**: O(1)
-- **Insertion/Deletion at End**: O(1)
-- **Insertion/Deletion at Beginning/Middle**: O(n)
-- **Search**: O(n)
+| Operation                        | Time Complexity | Explanation                                       |
+|----------------------------------|-----------------|---------------------------------------------------|
+| **Access**                       | O(1)            | Direct access to character via index              |
+| **Insertion/Deletion at End**    | O(1)            | Appending/removing at the end                     |
+| **Insertion/Deletion at Beginning/Middle** | O(n) | Requires shifting characters                      |
+| **Search**                       | O(n)            | Linear search through the string                  |
+
+<br>
+
+### Assignment
+---
+
+<br>
 
 ## Stacks, Queues, and Deques
 
@@ -120,6 +130,11 @@ int main() {
     return 0;
 }
 ```
+<br>
+
+### Assignment
+---
+
 
 ### Queue
 
@@ -150,6 +165,11 @@ int main() {
     return 0;
 }
 ```
+<br>
+
+### Assignment
+---
+
 
 ### Deque
 
@@ -194,5 +214,18 @@ int main() {
 | Access (Random)           | N/A   | N/A   | O(1)  |
 
 *Note:* Stacks and queues do not allow random access; you can only access the element at the top (stack) or front (queue).
+<br>
 
+### Assignment
 ---
+
+<br>
+
+## Knowledge check
+These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
+- [How do you declare and initialize a two dimensional array?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part1.md#two-dimensional-arrays)
+- [How do you input and output data to and from a two dimensional array?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part1.md#two-dimensional-arrays)
+
+## Additional Resources
+This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
+- [UP Algo++ Static Linear DS Lecture Slides](https://docs.google.com/presentation/d/1K3jiqlSqMxRToh926U01xdX73ib2k4xXWa2EpYysHFU/edit#slide=id.g164c8dcc09a_1_48)
