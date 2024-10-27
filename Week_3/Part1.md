@@ -1,12 +1,16 @@
+Here's an improved version with slight rephrasing, added context, and a few stylistic tweaks for clarity and flow.
+
+---
+
 # Part 1: Static Arrays Extended
 
 ## Recall
 
-An **array** is a collection of elements of the same type placed in contiguous memory locations. Arrays are fundamental in C++ and are widely used in competitive programming for their simplicity and efficiency.
+An **array** is a collection of elements of the same type stored in contiguous memory locations. Arrays are fundamental in C++ and are widely used in competitive programming due to their simplicity and efficiency.
 
 ### One-Dimensional Arrays
 
-A one-dimensional array represents a list of elements.
+A one-dimensional array represents a sequence or list of elements.
 
 ```cpp
 int arr[5]; // Declares an array of 5 integers
@@ -37,9 +41,9 @@ int main() {
 ```
 <br>
 
-## Two-Dimensional Arrays
+### Two-Dimensional Arrays
 
-Two-dimensional arrays are used to represent matrices or grids, which are common in problems like pathfinding, dynamic programming, and graph traversal.
+Two-dimensional arrays represent matrices or grids, which are common in problems involving pathfinding, dynamic programming, and graph traversal. While arrays can be extended to more than two dimensions, we will focus on two-dimensional arrays for now.
 
 ```cpp
 int grid[3][4]; // Declares a 3x4 2D array
@@ -78,14 +82,51 @@ int main() {
     return 0;
 }
 ```
+<br>
 
-## Time Complexities for Arrays
-| Operation               | Time Complexity | Explanation                              |
-|-------------------------|-----------------|------------------------------------------|
-| **Access**              | O(1)            | Direct access via index                  |
-| **Insertion at End**    | O(1)            | If space is available                    |
-| **Insertion at Beginning/Middle** | O(n) | Requires shifting elements               |
-| **Deletion at End**     | O(1)            |                                          |
-| **Deletion at Beginning/Middle** | O(n) | Requires shifting elements               |
-| **Search (Unsorted)**   | O(n)            | Linear search                            |
-| **Search (Sorted)**     | O(log n)        | Binary search (requires sorted array)    |
+## Time Complexities for Array Operations
+
+| Operation                       | Time Complexity | Explanation                                   |
+|---------------------------------|-----------------|-----------------------------------------------|
+| **Access**                      | O(1)            | Direct access via index                       |
+| **Insertion at End**            | O(1)            | Only if space is available                    |
+| **Insertion at Beginning/Middle** | O(n)         | Requires shifting elements                    |
+| **Deletion at End**             | O(1)            |                                               |
+| **Deletion at Beginning/Middle** | O(n)         | Requires shifting elements                    |
+| **Search (Unsorted)**           | O(n)            | Linear search                                 |
+| **Search (Sorted)**             | O(log n)        | Binary search (only if the array is sorted)   |
+
+<br>
+
+## Assignment
+
+1. Declare and initialize a two-dimensional array in which each element contains information about a student. Each student record should include 3 elements: the student’s name, year, and degree program. Populate the array with details of 5 students (fictional or real). Then, print the details of each student in this format:
+
+```
+Student 1
+Name: [Name]
+Year: [Year]
+Degree Program: [Program]
+
+Student 2
+Name: [Name]
+Year: [Year]
+Degree Program: [Program]
+
+...
+
+Student N
+Name: [Name]
+Year: [Year]
+Degree Program: [Program]
+```
+
+
+## Knowledge check
+These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
+- [What are the different parts of a C++ program?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#parts-of-a-basic-c-program)
+- [How do you display a message on the console in C++?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/week_1/Week_1/Part3.md#parts-of-a-basic-c-program)
+
+## Additional Resources
+This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
+- 
