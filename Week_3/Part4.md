@@ -468,7 +468,7 @@ For most applications, especially in competitive programming and general develop
 
 <br>
 
-# Why Use Linked Lists in Competitive Programming?
+## Why Use Linked Lists in Competitive Programming?
 
 ## 1. Dynamic Memory Allocation
 - **Flexible Memory Use**: Linked lists allocate memory as needed, unlike arrays, which require contiguous memory allocation.
@@ -535,7 +535,7 @@ These questions provide a chance to think about the important topics covered in 
 - [How do you insert elements into different positions in a doubly linked list?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part4.md#inserting-elements-1)
 - [How to remove elements in a doubly linked list?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part4.md#deleting-elements-1)
 - [How to traverse a doubly linked list?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part4.md#traversing-the-list-forward)
-- [Why use linked lists?]()
+- [Why use linked lists?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part4.md#why-use-linked-lists-in-competitive-programming)
 
 <br>
 
