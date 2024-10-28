@@ -422,14 +422,14 @@ Deque after removing from both ends: 2 3 4
 
 ## Knowledge check
 These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
-- [How do you use vectors in C++?]()
-- [What are the adavntages of vectors?]()
-- [What are stacks?]()
-- [How do you input, access, and pop elements of a stack?]()
-- [What are queues?]()
-- [How do you input, access, and pop elements of a queue?]()
-- [What are deques?]()
-- [How do you input, access, and pop elements of a deque?]()
+- [How do you use vectors in C++?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part2.md#vectors)
+- [What are the adavntages of vectors?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part2.md#vectors)
+- [What are stacks?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part2.md#stack)
+- [How do you input, access, and pop elements of a stack?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part2.md#stack)
+- [What are queues?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part2.md#queue)
+- [How do you input, access, and pop elements of a queue?]()https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part2.md#queue
+- [What are deques?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part2.md#deque)
+- [How do you input, access, and pop elements of a deque?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part2.md#deque)
 
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
