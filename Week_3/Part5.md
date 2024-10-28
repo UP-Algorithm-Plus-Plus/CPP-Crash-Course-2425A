@@ -285,6 +285,8 @@ GPA: 3.9
 - **Tuples** can hold any number of values, accessible via `get<index>(tuple)`.
 - Use **pairs** and **tuples** when you need to group data temporarily or for simple data structures.
 
+<br>
+
 ## When to Use Pairs and Tuples
 
 - **Quick Grouping:** When you need to combine a few values without extra overhead.
@@ -296,7 +298,10 @@ GPA: 3.9
 
 ## Knowledge check
 These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
-- [
+- [What are pairs and what are they for?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part5.md#pairs)
+- [How do you use pairs in C++?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part5.md#pairs)
+- [What are tuples and what are they for?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part5.md#tuples)
+- [How do you use tuples in C++?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part5.md#tuples)
 
 <br>
 
