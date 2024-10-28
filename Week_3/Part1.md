@@ -132,3 +132,4 @@ These questions provide a chance to think about the important topics covered in 
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
 - [UP Algo++ Static Linear DS Lecture Slides](https://docs.google.com/presentation/d/1K3jiqlSqMxRToh926U01xdX73ib2k4xXWa2EpYysHFU/edit#slide=id.g164c8dcc09a_1_48)
+- [C++ multidimensional arrays explained ⬜](https://youtu.be/fINt-nzR-o8?si=26ckC-R_OmO1r90r)

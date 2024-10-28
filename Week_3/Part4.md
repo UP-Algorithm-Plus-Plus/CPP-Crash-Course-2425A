@@ -542,3 +542,5 @@ These questions provide a chance to think about the important topics covered in 
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
 - [UP Algo++ Linked List Lecture Slides](https://docs.google.com/presentation/d/1qe7LcNVJLQOJ4nPvTNoTrKJ4MUuo2zb6-tNcCucjNT8/edit#slide=id.g164c8dcc09a_1_48)
+- [Linked Lists in 4 minutes](https://youtu.be/F8AbOfQwl1c?si=YDRf_yBNnuDNxjgZ)
+- [C++ pointers explained easy 👈](https://youtu.be/slzcWKWCMBg?si=ARBaofuwIpusI2zu)

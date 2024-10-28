@@ -434,3 +434,5 @@ These questions provide a chance to think about the important topics covered in 
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
 - [UP Algo++ Dynamic Linear DS](https://docs.google.com/presentation/d/1XFdVQdtezbnQopp6LqhKQAuBA8KxUZk_5GU-bhR3b3E/edit#slide=id.g164c8dcc09a_1_48)
+- [Stacks in 3 minutes](https://youtu.be/KcT3aVgrrpU?si=ndbbQzHGQrDISlvZ)
+- [Queues and Deques in 3 minutes](https://youtu.be/D6gu-_tmEpQ?si=R6hCJC7h-nuyVzGD)

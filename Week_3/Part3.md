@@ -386,5 +386,9 @@ These questions provide a chance to think about the important topics covered in 
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
 - [UP Algo++ Struct and Class Lecture Slides](https://docs.google.com/presentation/d/1RXYMykyswn3_voSt6wEDM7K2uMmIf0KAwH96WhVoUTQ/edit#slide=id.g164c8dcc09a_1_48)
-
-
+- [STRUCTS in C++ explained 🏗️](https://youtu.be/ObUUe9ujYoY?si=3EAR4JYuH20uBlwY)
+- [C++ CLASSES & OBJECTS explained easy 🧍](https://youtu.be/_8H2n0nDfd4?si=DcsDzBGMc5vPioxj)
+- [C++ CONSTRUCTORS explained easy 👷](https://youtu.be/5z3KEX9AZEQ?si=xAzWv8P1NBZg-GCC)
+- [C++ CONSTRUCTOR OVERLOADING explained easy 👨‍🍳](https://youtu.be/uAVj1cLktyU?si=r_N6WiV0nKF7_YUX)
+- [C++ GETTERS & SETTERS explained easy 🔒](https://youtu.be/5_GQw06deQg?si=Qk_1jSjn0ClzETDa)
+- [What is INHERITANCE in C++? 👨‍👧‍👧](https://youtu.be/5HYIFFuGcvk?si=aQzYU3BT6Uz_ItGU)
