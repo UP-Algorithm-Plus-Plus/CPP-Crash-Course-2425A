@@ -308,3 +308,12 @@ These questions provide a chance to think about the important topics covered in 
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
 - [UP Algo++ Pair and Tuple Lecture Slides](https://docs.google.com/presentation/d/1b1v8-ZOV59bWb5JiuyHhRG5QGKAhGA3eYALBvQIJCtA/edit#slide=id.g164c8dcc09a_1_48)
+
+<br>
+
+## Extra Problems (Optional)
+- [10107 - What is the Median?](https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&category=353&page=show_problem&problem=1048)
+- [541 - Error Correction](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=624&page=show_problem&problem=482)
+- [12100 - Printer Queue](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=629&page=show_problem&problem=3252)
+- [11988 - Broken Keyboard (a.k.a. Baiju Text)](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=627&page=show_problem&problem=3139)
+- [1062 - Containers](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=628&page=show_problem&problem=3503)

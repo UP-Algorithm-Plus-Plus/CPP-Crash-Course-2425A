@@ -377,7 +377,7 @@ Classes and structures in C++ allow you to create your own custom data types tha
 These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
 - [How to define a struct and how can you use them in your C++ code?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part3.md#structures-struct) 
 - [How to define a class without private members?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part3.md#defining-and-using-a-basic-class)
-- [How do you create an object using a class? How do you modify the object's data and run functions/methods using the object?]((https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part3.md#defining-and-using-a-basic-class))
+- [How do you create an object using a class? How do you modify the object's data and run functions/methods using the object?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part3.md#defining-and-using-a-basic-class)
 - [How do define a class with private members?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part3.md#introducing-access-control)
 - [What are constructors and how do you use them?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part3.md#constructors)
 
