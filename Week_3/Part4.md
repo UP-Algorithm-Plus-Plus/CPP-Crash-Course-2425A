@@ -468,9 +468,36 @@ For most applications, especially in competitive programming and general develop
 
 <br>
 
+# Why Use Linked Lists in Competitive Programming?
+
+## 1. Dynamic Memory Allocation
+- **Flexible Memory Use**: Linked lists allocate memory as needed, unlike arrays, which require contiguous memory allocation.
+- **Efficient for Unknown Sizes**: When the size of data isn't known beforehand, linked lists allow for smooth expansion without reallocating or resizing.
+
+## 2. Efficient Insertions and Deletions
+- **O(1) Complexity**: Insertions and deletions can be performed in constant time (O(1)) if the position is known, unlike arrays, which require shifting elements.
+- **Useful in Dynamic Scenarios**: In problems where data is frequently added or removed, like queue or stack implementations, linked lists minimize overhead.
+
+## 3. Flexible Data Structures
+- **Custom Data Structures**: Linked lists are often used to build other complex data structures, such as stacks, queues, hash tables, and adjacency lists for graphs.
+- **Adaptive Storage**: Doubly and circular linked lists offer additional flexibility, making traversal and operations from both ends easy.
+
+## 4. Handling Large Data Sets
+- **Avoid Memory Overflow**: Linked lists are effective when handling large data that might exceed the limits of a single memory block, as they store elements non-contiguously.
+- **Better for Linked Data**: In some problems, data is naturally linked (e.g., a sequence of events), and linked lists can model this relationship efficiently.
+
+## 5. Edge Cases in List Operations
+- **Efficient Merging**: Merging linked lists can be done in linear time (O(n)), which can be advantageous in divide-and-conquer strategies or sorting algorithms.
+- **Use in Splicing Operations**: Linked lists enable "splicing" sections of lists together without extra copies, unlike arrays.
+
+## 6. Avoiding Shifting Overheads
+- **Minimize Shifting in Queues**: Linked lists avoid shifting overhead for queue implementations, as they allow efficient dequeue and enqueue operations.
+- **Effective in Problems with Moving Windows**: Problems involving moving windows (like sliding windows) benefit from the efficient removals and insertions of linked lists.
+
+
 ## Summary
 
-- **Iterators:** Objects that point to elements in a container. Essential for traversing and manipulating elements.
+- **Iterators:** Objects that point to elements in a container, essential for traversing and manipulating elements.
   - **In `forward_list`:** Use iterators for insertion and deletion after specific positions.
   - **In `list`:** Use iterators to insert or delete at specific positions, both forward and backward.
 - **Linked Lists:** Sequences of nodes where each node points to the next (and possibly previous) node.
@@ -485,16 +512,30 @@ For most applications, especially in competitive programming and general develop
 - **Deleting at Specific Positions:**
   - **In `forward_list`:** Use `erase_after()` to remove the element after a given position.
   - **In `list`:** Use `erase()` with an iterator pointing to the exact position.
+- **Why Use Linked Lists in Competitive Programming?**
+  - **Dynamic Memory Allocation:** Linked lists allocate memory as needed, unlike arrays, making them efficient for unknown sizes.
+  - **Efficient Insertions and Deletions:** Perform insertions and deletions in constant time (O(1)) if the position is known.
+  - **Flexible Data Structures:** Useful for building other structures like stacks, queues, hash tables, and adjacency lists.
+  - **Handling Large Data Sets:** Ideal for large or unknown data sizes that might exceed memory blocks.
+  - **Edge Cases in List Operations:** Efficient merging and splicing without extra copies, beneficial for specific algorithmic tasks.
+  - **Avoiding Shifting Overheads:** Minimize overhead in queue implementations and moving window problems.
 
-By understanding iterators and how to use them with `forward_list` and `list`, you can effectively manipulate linked lists in C++. The STL provides powerful tools that simplify working with these data structures, making them accessible even to beginners.
-
-Feel free to experiment with the provided code examples and assignments to deepen your understanding. Happy coding!
 
 <br>
 
 ## Knowledge check
 These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
-- a
+- [What are singly and doubly linked lists?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part4.md#what-is-a-linked-list)
+- [What is an iterator?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part4.md#what-is-an-iterator)
+- [How to create a singly linked list?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part4.md#singly-linked-lists-with-forward_list)
+- [How to insert elements into different positions in a singly linked list?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part4.md#inserting-elements)
+- [How to remove elements in a singly linked list?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part4.md#deleting-elements)
+- [How to traverse a singly linked list?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part4.md#traversing-the-list)
+- [How to create a doubly linked list?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part4.md#doubly-linked-lists-with-list)
+- [How do you insert elements into different positions in a doubly linked list?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part4.md#inserting-elements-1)
+- [How to remove elements in a doubly linked list?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part4.md#deleting-elements-1)
+- [How to traverse a doubly linked list?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part4.md#traversing-the-list-forward)
+- [Why use linked lists?]()
 
 <br>
 
