@@ -60,6 +60,44 @@ int main() {
 }
 ```
 
+### Removing Elements from a Vector
+
+Vectors provide several methods to remove elements:
+
+- **`pop_back()`**: Removes the last element.
+- **`erase()`**: Removes elements at a specified position or range.
+- **`clear()`**: Removes all elements from the vector.
+
+**Example: Removing Elements**
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> v = {5, 10, 15, 20, 25};
+
+    // Remove the last element
+    v.pop_back(); // Vector now contains: 5, 10, 15, 20
+
+    // Remove the element at index 1 (second element)
+    v.erase(v.begin() + 1); // Vector now contains: 5, 15, 20
+
+    // Remove elements from index 0 to index 1 (not including index 2)
+    v.erase(v.begin(), v.begin() + 2); // Vector now contains: 20
+
+    // Clear all elements
+    v.clear(); // Vector is now empty
+
+    cout << "Size of vector after clear: " << v.size() << endl; // Output: 0
+
+    return 0;
+}
+```
+
+> **Note:** When removing elements from a vector, be cautious with indices and iterators, as the size and order of the vector change.
+
 ### Time Complexities for Vectors
 
 Understanding the time complexities of various operations helps in writing efficient code.
@@ -311,6 +349,40 @@ int main() {
 }
 ```
 
+### Removing Elements from a Deque
+
+Deques allow you to remove elements from both ends:
+
+- **`pop_front()`**: Removes the first element.
+- **`pop_back()`**: Removes the last element.
+
+**Example: Removing Elements**
+
+```cpp
+#include <iostream>
+#include <deque>
+using namespace std;
+
+int main() {
+    deque<int> d = {1, 2, 3, 4, 5};
+
+    // Remove element from the front
+    d.pop_front(); // Deque now contains: [2, 3, 4, 5]
+
+    // Remove element from the back
+    d.pop_back();  // Deque now contains: [2, 3, 4]
+
+    // Displaying the deque
+    cout << "Deque after popping from both ends: ";
+    for (int num : d) {
+        cout << num << " ";
+    }
+    // Output: Deque after popping from both ends: 2 3 4
+
+    return 0;
+}
+```
+
 ### Time Complexities
 
 | Operation                 | Stack | Queue | Deque |
@@ -326,6 +398,7 @@ int main() {
 <br>
 
 ### Assignment
+
 ---
 
 **Task:** Write a C++ program that:
@@ -333,7 +406,7 @@ int main() {
 1. Creates a deque of integers.
 2. Adds numbers 1 to 5 to the deque, alternating between `push_front` and `push_back`.
 3. Prints the contents of the deque.
-4. Removes an element from both the front and back.
+4. Removes an element from both the front and back using `pop_front` and `pop_back`.
 5. Prints the contents of the deque again.
 
 **Example Output:**
@@ -347,13 +420,17 @@ Deque after removing from both ends: 2 3 4
 
 ---
 
-<br>
-
 ## Knowledge check
 These questions provide a chance to think about the important topics covered in this lesson. If you're unsure of an answer, revisit the material. Remember, you're not expected to memorize or fully master this information right now.
-- [How do you declare and initialize a two dimensional array?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part1.md#two-dimensional-arrays)
-- [How do you input and output data to and from a two dimensional array?](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_3/Part1.md#two-dimensional-arrays)
+- [How do you use vectors in C++?]()
+- [What are the adavntages of vectors?]()
+- [What are stacks?]()
+- [How do you input, access, and pop elements of a stack?]()
+- [What are queues?]()
+- [How do you input, access, and pop elements of a queue?]()
+- [What are deques?]()
+- [How do you input, access, and pop elements of a deque?]()
 
 ## Additional Resources
 This section offers useful links to relevant content. It's optional and meant to be extra material for further reading.(Note: Some resources might require you you to have access to the Algo++ Google drive in order to view it.)
-- [UP Algo++ Dynamic Linear DS](https://docs.google.com/presentation/d/1XFdVQdtezbnQopp6LqhKQAuBA8KxUZk_5GU-bhR3b3E/edit#slide=id.g185a2f6ea91_0_11)
+- [UP Algo++ Dynamic Linear DS](https://docs.google.com/presentation/d/1XFdVQdtezbnQopp6LqhKQAuBA8KxUZk_5GU-bhR3b3E/edit#slide=id.g164c8dcc09a_1_48)

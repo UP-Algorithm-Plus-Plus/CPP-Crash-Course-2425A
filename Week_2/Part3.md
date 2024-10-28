@@ -200,7 +200,7 @@ Because `2<4`, we store 2 first. So we then have,
 {1,3} and {2,4}
 ```
 
->(Umulit lang so bat mo pa ginawa,,, -> bc di tayo sure if sorted ba talaga siya, the computer doesn't know that)
+>(It just repeated, so why did you do it... -> because we’re not sure if it’s really sorted, the computer doesn’t know that.)
 
 We can then apply the **merging** to both halves.
 
