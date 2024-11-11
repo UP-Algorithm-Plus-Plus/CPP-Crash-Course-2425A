@@ -5,7 +5,7 @@ How about the following figure?
 ![](images/graphaCDB.png)Is `C` after or before `A`? What is the next letter after `D`? Can you arrange the elemnts such that there is a **linear structure**?
 
 In this series, we will be talking about the following non-linear data structures.
-- Graphs
-- Trees
+- [Graphs](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_4/Part%202.md)
+- [Trees](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_4/Part%204.md)
 - Binary Heap
 
