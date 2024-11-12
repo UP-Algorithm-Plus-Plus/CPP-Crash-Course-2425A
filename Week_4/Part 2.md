@@ -179,4 +179,4 @@ Vertex 4: (0, 10)
     - Best for sparse graphs where most vertices have few neighbors.
     - Space-efficient and useful for graph traversal algorithms like **DFS** and **BFS**.
 
-Proceed to Graph Algorithms
+Proceed to [Graph Algorithms](https://github.com/UP-Algorithm-Plus-Plus/CPP-Crash-Course-2425A/blob/main/Week_4/Part%203.md)

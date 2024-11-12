@@ -129,3 +129,8 @@ int main() {
 }
 
 ```
+
+### Problems
+ - https://cses.fi/problemset/task/1674
+ - https://cses.fi/problemset/task/1131
+ - https://cses.fi/problemset/task/1132
